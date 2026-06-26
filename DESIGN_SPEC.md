@@ -3,11 +3,11 @@
 ## Status
 
 - Stage: design
-- Status: PM / PMO internal review passed, founder review pending
+- Status: rejected
 - Date: 2026-06-26
-- Scope: high-fidelity post-onboarding app shell review candidate
+- Scope: rejected post-onboarding app shell visual attempts
 
-This spec replaces the rejected IA-only visual draft with a high-fidelity review candidate. It is not approved for dev until founder review passes, but it is the current PM / PMO-approved visual target for review.
+Founder review rejected the high-fidelity review candidate as visually unacceptable. PM / PMO must not treat this as a usable product direction. Dev remains blocked.
 
 The previous `Opening-only / no bottom navigation` draft over-corrected the problem by removing global navigation. The correct IA remains a refined 4-entry app shell, not a generic 5-tab utility bar and not a single landing page.
 
@@ -51,7 +51,7 @@ Rules:
 
 These PNGs may be used to explain the IA only. They must not be used as the final visual target for SwiftUI implementation.
 
-## High-Fidelity Review Candidate
+## Rejected High-Fidelity Candidate
 
 - `design/high-fidelity-shell-today-returning-2026-06-26.png`
 - `design/high-fidelity-shell-today-empty-2026-06-26.png`
@@ -61,14 +61,14 @@ These PNGs may be used to explain the IA only. They must not be used as the fina
 - `design/high-fidelity-shell-contact-sheet-2026-06-26.png`
 - Generator: `design/generate_high_fidelity_shell_review.py`
 
-Design corrections made in this pass:
+Do not use these images as implementation targets. They remain in the repo only as rejected evidence.
 
-- The review image is now an actual contact sheet, not only text or file paths.
-- The app shell is a paper/ticket-style dock with a center `写` action, not a default utility tab bar.
-- Core operation areas use warm paper panels so the app is not globally black.
-- Flight scan and reminders are contextual actions inside `今天`, not permanent tabs.
-- Compose is immersive and hides the shell while active.
-- Public discovery keeps read-only boundaries and avoids exact seat identity.
+Why this pass failed:
+
+- Visual quality still does not reach a polished emotional product bar.
+- The screens still feel generated and internally designed, not like an app with real art direction.
+- PM / PMO over-indexed on "not a utility menu" and missed the higher bar: this needs to feel desirable, memorable, and refined.
+- The next pass should not be another quick scripted redraw. It needs a stronger external-grade Figma / visual direction first.
 
 ## Screen: Today
 
@@ -178,18 +178,18 @@ The shell must feel designed for 云上心事:
 
 ## PM / PMO Internal Review
 
-PM review: passed for founder review.
+PM review: failed after founder review.
 
 - The IA is now stable: emotional app shell, not landing page and not utility tab bar.
 - It addresses the back-stack navigation problem.
 - It keeps writing as the product's center of gravity.
-- The high-fidelity candidate keeps Cloud Card / paper / ticket language as the emotional center.
+- The visual design still fails product taste and must not proceed.
 
-PMO review: passed for founder review.
+PMO review: failed.
 
 - This corrects the previous over-removal of global navigation.
-- This also corrects the previous low-quality visual draft.
-- The actual contact sheet is attached and can be reviewed directly in chat.
-- Dev remains blocked until founder approval and test-plan refresh.
+- This did not correct the larger quality problem.
+- PMO should not mark a generated contact sheet as acceptable unless it is clearly good enough to show real users.
+- Dev remains blocked.
 
-Founder review: pending.
+Founder review: rejected.

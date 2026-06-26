@@ -1,7 +1,7 @@
 {
   "stage": "design",
   "role": "roles/designer.md",
-  "status": "completed",
+  "status": "rejected",
   "project": "head_in_clouds",
   "artifacts": [
     "head_in_clouds/DESIGN_SPEC.md",
@@ -19,14 +19,14 @@
   "requires_human_review": true,
   "completed_at": "2026-06-26T09:20:10Z",
   "pm_internal_review": {
-    "status": "passed",
+    "status": "failed_product_taste_gate",
     "reviewed_at": "2026-06-26T09:20:10Z",
-    "notes": "PM keeps the approved IA: Today / Flight Book / center Write / Discover. The new high-fidelity candidate restores the Cloud Card as emotional center, keeps add-flight/reminder contextual, and avoids the prior utility-menu/button-stack failure."
+    "notes": "PM correction after founder review: the IA can be retained, but all high-fidelity candidate screens fail product taste and cannot be treated as a viable product direction."
   },
   "pmo_internal_review": {
-    "status": "passed",
+    "status": "failed_visual_quality_gate",
     "reviewed_at": "2026-06-26T09:20:10Z",
-    "notes": "PMO confirms the new contact sheet is suitable for founder review: actual screenshots are attached, no Draft label remains, no fifth tab, no generic utility tab bar, and dev remains blocked until founder approval."
+    "notes": "PMO correction: this pass still looks visually unacceptable and must not unlock test-plan/dev. PMO should not mark it as suitable for founder review again without a stronger external-grade design source."
   },
   "figma_source": "https://www.figma.com/make/AtPRtpoJCOkAhhDBkIuKak/%E4%BA%91%E4%B8%8A%E5%BF%83%E4%BA%8B%E8%AE%BE%E8%AE%A1",
   "screen_coverage": {
@@ -40,10 +40,12 @@
     "discover": true,
     "global_shell": true
   },
-  "decision": "go_pending_founder_review",
+  "decision": "rejected_visual_quality",
   "next": [
-    "founder_review",
-    "test-plan"
+    "design_reset",
+    "external_grade_visual_direction"
   ],
-  "notes": "High-fidelity app shell review candidate is ready for founder review. If approved, run approve design and refresh test-plan before dev."
+  "notes": "Founder rejected the high-fidelity shell candidate as visually unacceptable. Keep only the broad IA intent; do not use any current generated screens as implementation target.",
+  "human_rejected_at": "2026-06-26T09:27:24.703Z",
+  "reject_note": "Founder rejected high-fidelity shell candidate: all screens still fail product taste and visual quality; PM/PMO gate must not treat this as acceptable"
 }
