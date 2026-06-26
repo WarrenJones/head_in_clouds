@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="80" x2="940" y2="940" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0D1F3C"/>
+      <stop offset="1" stop-color="#020817"/>
+    </linearGradient>
+    <linearGradient id="ticket" x1="260" y1="250" x2="760" y2="770" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF1CA"/>
+      <stop offset="1" stop-color="#D9B566"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <path d="M258 320H766C766 374 810 418 864 418V606C810 606 766 650 766 704H258C258 650 214 606 160 606V418C214 418 258 374 258 320Z" fill="url(#ticket)"/>
+  <path d="M316 512H708" stroke="#13264A" stroke-width="28" stroke-linecap="round" opacity="0.88"/>
+  <circle cx="316" cy="512" r="36" fill="#13264A"/>
+  <circle cx="708" cy="512" r="36" fill="#13264A"/>
+  <path d="M362 512C430 420 590 420 662 512" fill="none" stroke="#13264A" stroke-width="26" stroke-linecap="round"/>
+  <path d="M312 622H712" stroke="#13264A" stroke-width="18" stroke-linecap="round" opacity="0.34"/>
+</svg>

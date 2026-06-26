@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bgHorizon" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#F9FBF8"/>
+          <stop offset="100%" stop-color="#F3EDE4"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgHorizon)"/>
+      <path d="M234 514C360 458 506 458 640 520C696 546 744 544 794 516" fill="none" stroke="#AABAB4" stroke-width="58" stroke-linecap="round"/>
+      <path d="M278 634H616" fill="none" stroke="#26302E" stroke-width="70" stroke-linecap="round"/>
+      <circle cx="696" cy="634" r="43" fill="#D97360"/>
+      <path d="M384 734H640" fill="none" stroke="#D9E2DE" stroke-width="36" stroke-linecap="round"/>
+    
+</svg>

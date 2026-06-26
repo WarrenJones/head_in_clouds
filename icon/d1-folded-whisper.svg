@@ -1,0 +1,19 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    D1 · Folded Whisper
+    One sentence written flat — then folded up at the right end,
+    lifted by nothing visible. The lift IS the gesture.
+    Shape: long horizontal stroke → hooks upward (the fold).
+  -->
+  <rect width="1024" height="1024" rx="229" fill="#0A0F1E"/>
+
+  <!-- The sentence + its fold -->
+  <path d="M 170,590  L 530,590  C 648,590  732,522  764,390"
+        fill="none"
+        stroke="#EDE0C4"
+        stroke-width="58"
+        stroke-linecap="round"/>
+
+  <!-- Tiny dot at the lifted tip — the whisper itself -->
+  <circle cx="764" cy="390" r="34" fill="#EDE0C4"/>
+</svg>

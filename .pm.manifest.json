@@ -1,0 +1,122 @@
+{
+  "stage": "pm",
+  "role": "roles/pm.md",
+  "status": "completed",
+  "project": "head_in_clouds",
+  "opportunity_id": "2026-05-15-verified-flight-note",
+  "version": "v2.4",
+  "artifacts": [
+    "head_in_clouds/OPPORTUNITY.md",
+    "head_in_clouds/PRD.md",
+    "head_in_clouds/PRD-v1-archive.md",
+    "head_in_clouds/PRD-addendum-onboarding-returning.md",
+    "head_in_clouds/DESIGN_BRIEF.md",
+    "head_in_clouds/DESIGN_DETAIL.md",
+    "head_in_clouds/CLAUDE_DESIGN_ROUND1.md",
+    "head_in_clouds/FIGMA_MAKE_BRIEF.md",
+    "head_in_clouds/FIGMA_MAKE_PROMPT.md",
+    "head_in_clouds/GPT_IMAGE2_BRIEF.md",
+    "head_in_clouds/context/pm.md"
+  ],
+  "requires_human_review": true,
+  "completed_at": "2026-05-20T03:21:03Z",
+  "decision": "go_stage_1_v2_4_expression_first",
+  "ready_for_test_plan": true,
+  "track": "micro_app",
+  "notes": "v2.4 keeps the v2.3.1 visual lock and changes the core interaction model to expression first, verification later. Users can write one sentence and generate a private Cloud Card without scanning a boarding pass; flight verification is only required for same-flight publishing, comments, and same-flight recall notifications. Public surfaces must not show specific seat numbers. Figma Make handoff now asks to rerun the core screens around 00a/01a/02-05/06/07/08/15/16 with this gating model.",
+  "v2_3_changes_vs_v2_2": {
+    "screens_added": 2,
+    "screens_total": 23,
+    "new_screens": [
+      "15 Flight Reminder Setup",
+      "16 Shared Card Landing / Same Flight Notes"
+    ],
+    "major_modified_screens": [
+      "00b Permission Primer (notification is Stage 1, not gray)",
+      "01a Opening (adds Flight Reminder entry)",
+      "01b Opening Returning (adds Flight Reminder entry)",
+      "05 Flight Confirm (can schedule boarding reminder)",
+      "06 Compose (one-line first, templates, voice-to-text, offline states)",
+      "07 Card Studio (Cloud Card as acquisition asset)",
+      "08 Publish / Share (offline queued + share to 16)",
+      "09 Flight Space (same-flight notification entry + offline sync state)",
+      "13 Account & Settings (notification management is active)"
+    ],
+    "new_data_models": [
+      "FlightIntent",
+      "CloudCardShare"
+    ],
+    "new_scenarios_added": [
+      "S8 pre-boarding reminder activation",
+      "S9 offline writing and landing sync",
+      "S10 Cloud Card share landing acquisition",
+      "S11 same-flight new-note retention notification"
+    ],
+    "new_closed_loops_added": [
+      "G pre-boarding activation",
+      "H offline-first publish",
+      "I share-led acquisition",
+      "J post-flight retention"
+    ],
+    "new_analytics_events": [
+      "flight_intent_created",
+      "boarding_reminder_scheduled",
+      "boarding_reminder_sent",
+      "boarding_reminder_opened",
+      "compose_mode_selected",
+      "template_prompt_selected",
+      "voice_recording_started",
+      "voice_transcribed",
+      "offline_draft_saved",
+      "offline_sync_started",
+      "offline_sync_completed",
+      "offline_sync_failed",
+      "headline_quote_edited",
+      "cloud_card_rendered",
+      "cloud_card_saved",
+      "share_landing_opened",
+      "share_landing_same_flight_tapped",
+      "share_landing_reminder_started",
+      "same_flight_note_notification_sent",
+      "same_flight_note_notification_opened",
+      "same_flight_notes_viewed"
+    ],
+    "founder_decisions_needed": [
+      "D5 notifications enter Stage 1, limited to boarding reminder and same-flight new-note recall",
+      "D6 one sentence is a completed publishable unit",
+      "D7 Cloud Card has no download CTA and links to same-flight notes"
+    ],
+    "known_risks": {
+      "low_frequency_context": "v2.3 improves activation and sharing inside a low-frequency flight context but does not remove the underlying low-frequency risk.",
+      "cloud_card_quality": "Organic acquisition depends on Cloud Card being worth sharing as an image, not as an app promotion.",
+      "offline_engineering_cost": "Offline draft, local card preview, sync queue, retry, and failure states are Stage 1 requirements."
+    }
+  },
+  "v2_3_1_changes_vs_v2_3": {
+    "visual_direction_locked": "Default Cloud Card uses vintage boarding postcard / ticket-stub paper direction based on GPT Image 2 card review.",
+    "default_card_template": "boarding_postcard",
+    "demoted_templates": [
+      "cloud_window / photo overlay templates are optional and should only be recommended when user text and photo mood match"
+    ],
+    "first_open_change": "00a must lead with '登机前 30 分钟，给这趟飞行留一句话' and show the postcard idea immediately.",
+    "ui_system_change": "Dark UI is atmosphere only; compose, settings, reading, and form surfaces use paper/light cards.",
+    "wechat_green_constraint": "#07C160 is only allowed on the WeChat login button; connected states use subdued blue-gray/ink-green/stamp treatment.",
+    "ugc_quality_safety": "Design must handle ordinary UGC such as '飞机晚点了，累死。' without aesthetic collapse."
+  },
+  "v2_4_changes_vs_v2_3_1": {
+    "core_interaction_change": "Expression first, verification later. Writing and private Cloud Card generation do not require boarding pass scanning.",
+    "verification_gate": "Flight verification is required only for same-flight publishing, same-flight comments, and same-flight new-note notifications.",
+    "publish_scopes": [
+      "private_card",
+      "same_flight"
+    ],
+    "privacy_fix": "Public surfaces must not show specific seat numbers; use fuzzy labels such as window-side passenger or aisle-side passenger.",
+    "figma_make_update": "Handoff and prompt now ask Figma Make to rerun core screens with private share and same-flight publish split."
+  },
+  "previous_approval": {
+    "version": "v2.4",
+    "human_approved_at": "(pending)",
+    "note": "Approve v2.4 via orchestrate.ts approve pm --project=head_in_clouds before downstream dev execution."
+  },
+  "human_approved_at": "2026-05-20T05:37:23.171Z"
+}

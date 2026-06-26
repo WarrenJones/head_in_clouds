@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000001 /* HeadInCloudsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* HeadInCloudsApp.swift */; };
+		B10000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* RootView.swift */; };
+		B10000000000000000000003 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* WelcomeView.swift */; };
+		B10000000000000000000004 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000004 /* ComposeView.swift */; };
+		B10000000000000000000005 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000005 /* Models.swift */; };
+		B10000000000000000000006 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000006 /* Analytics.swift */; };
+		B10000000000000000000007 /* Adapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000007 /* Adapters.swift */; };
+		B10000000000000000000008 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000008 /* Services.swift */; };
+		B10000000000000000000009 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000009 /* AppState.swift */; };
+		B10000000000000000000010 /* FeatureViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000010 /* FeatureViews.swift */; };
+		B10000000000000000000011 /* UserNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000011 /* UserNotificationScheduler.swift */; };
+		B10000000000000000000012 /* NotificationRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000012 /* NotificationRouting.swift */; };
+		B10000000000000000000013 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000013 /* APIClient.swift */; };
+		B10000000000000000000014 /* BoardingPassScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000014 /* BoardingPassScannerView.swift */; };
+		B10000000000000000000015 /* BoardingPassParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000015 /* BoardingPassParser.swift */; };
+		B10000000000000000000016 /* WeChatSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000019 /* WeChatSharing.swift */; };
+		B10000000000000000000018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000018 /* Assets.xcassets */; };
+		B10000000000000000000019 /* WechatOpenSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D20000000000000000000002 /* WechatOpenSDK */; };
+		C10000000000000000000001 /* HeadInCloudsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000000000000000000002 /* HeadInCloudsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C40000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10000000000000000000001;
+			remoteInfo = HeadInClouds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* HeadInClouds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadInClouds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000001 /* HeadInCloudsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadInCloudsApp.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B20000000000000000000003 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B20000000000000000000004 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		B20000000000000000000005 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B20000000000000000000006 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		B20000000000000000000007 /* Adapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapters.swift; sourceTree = "<group>"; };
+		B20000000000000000000008 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		B20000000000000000000009 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B20000000000000000000010 /* FeatureViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViews.swift; sourceTree = "<group>"; };
+		B20000000000000000000011 /* UserNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationScheduler.swift; sourceTree = "<group>"; };
+		B20000000000000000000012 /* NotificationRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRouting.swift; sourceTree = "<group>"; };
+		B20000000000000000000013 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+			B20000000000000000000014 /* BoardingPassScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassScannerView.swift; sourceTree = "<group>"; };
+			B20000000000000000000015 /* BoardingPassParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassParser.swift; sourceTree = "<group>"; };
+			B20000000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+			B20000000000000000000017 /* HeadInClouds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeadInClouds.entitlements; sourceTree = "<group>"; };
+			B20000000000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+			B20000000000000000000019 /* WeChatSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatSharing.swift; sourceTree = "<group>"; };
+			B20000000000000000000020 /* HeadInClouds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeadInClouds-Bridging-Header.h"; sourceTree = "<group>"; };
+			C20000000000000000000001 /* HeadInCloudsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadInCloudsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+			C20000000000000000000002 /* HeadInCloudsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadInCloudsUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A30000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000002 /* App */,
+				A30000000000000000000004 /* Sources */,
+				C30000000000000000000001 /* HeadInCloudsUITests */,
+				A30000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A30000000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000001 /* HeadInCloudsApp.swift */,
+				B20000000000000000000002 /* RootView.swift */,
+					B20000000000000000000009 /* AppState.swift */,
+					B20000000000000000000016 /* Info.plist */,
+					B20000000000000000000017 /* HeadInClouds.entitlements */,
+					B20000000000000000000018 /* Assets.xcassets */,
+					B20000000000000000000019 /* WeChatSharing.swift */,
+					B20000000000000000000020 /* HeadInClouds-Bridging-Header.h */,
+					B20000000000000000000011 /* UserNotificationScheduler.swift */,
+					B20000000000000000000012 /* NotificationRouting.swift */,
+					B20000000000000000000014 /* BoardingPassScannerView.swift */,
+				A30000000000000000000003 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000003 /* WelcomeView.swift */,
+				B20000000000000000000004 /* ComposeView.swift */,
+				B20000000000000000000010 /* FeatureViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000004 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A30000000000000000000005 /* HeadInCloudsCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000005 /* HeadInCloudsCore */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000005 /* Models.swift */,
+				B20000000000000000000006 /* Analytics.swift */,
+				B20000000000000000000013 /* APIClient.swift */,
+				B20000000000000000000015 /* BoardingPassParser.swift */,
+				B20000000000000000000007 /* Adapters.swift */,
+				B20000000000000000000008 /* Services.swift */,
+			);
+			path = HeadInCloudsCore;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* HeadInClouds.app */,
+				C20000000000000000000001 /* HeadInCloudsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000001 /* HeadInCloudsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C20000000000000000000002 /* HeadInCloudsUITests.swift */,
+			);
+			path = HeadInCloudsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000001 /* HeadInClouds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000002 /* Build configuration list for PBXNativeTarget "HeadInClouds" */;
+			buildPhases = (
+				A50000000000000000000001 /* Sources */,
+				A50000000000000000000002 /* Frameworks */,
+				A50000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadInClouds;
+			packageProductDependencies = (
+				D20000000000000000000002 /* WechatOpenSDK */,
+			);
+			productName = HeadInClouds;
+			productReference = A20000000000000000000001 /* HeadInClouds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A10000000000000000000002 /* HeadInCloudsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C70000000000000000000001 /* Build configuration list for PBXNativeTarget "HeadInCloudsUITests" */;
+			buildPhases = (
+				C50000000000000000000001 /* Sources */,
+				C50000000000000000000002 /* Frameworks */,
+				C50000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C60000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = HeadInCloudsUITests;
+			productName = HeadInCloudsUITests;
+			productReference = C20000000000000000000001 /* HeadInCloudsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					A10000000000000000000001 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					A10000000000000000000002 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = A10000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A70000000000000000000001 /* Build configuration list for PBXProject "HeadInClouds" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A30000000000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D20000000000000000000001 /* XCRemoteSwiftPackageReference "WechatOpenSDK" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A30000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000001 /* HeadInClouds */,
+				A10000000000000000000002 /* HeadInCloudsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A50000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000018 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A50000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* HeadInCloudsApp.swift in Sources */,
+				B10000000000000000000002 /* RootView.swift in Sources */,
+				B10000000000000000000009 /* AppState.swift in Sources */,
+				B10000000000000000000011 /* UserNotificationScheduler.swift in Sources */,
+				B10000000000000000000012 /* NotificationRouting.swift in Sources */,
+				B10000000000000000000014 /* BoardingPassScannerView.swift in Sources */,
+				B10000000000000000000016 /* WeChatSharing.swift in Sources */,
+				B10000000000000000000003 /* WelcomeView.swift in Sources */,
+				B10000000000000000000004 /* ComposeView.swift in Sources */,
+				B10000000000000000000010 /* FeatureViews.swift in Sources */,
+				B10000000000000000000005 /* Models.swift in Sources */,
+				B10000000000000000000006 /* Analytics.swift in Sources */,
+				B10000000000000000000013 /* APIClient.swift in Sources */,
+				B10000000000000000000015 /* BoardingPassParser.swift in Sources */,
+				B10000000000000000000007 /* Adapters.swift in Sources */,
+				B10000000000000000000008 /* Services.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000000000000000000001 /* HeadInCloudsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A50000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000019 /* WechatOpenSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C60000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10000000000000000000001 /* HeadInClouds */;
+			targetProxy = C40000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A60000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A60000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A60000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+					APS_ENVIRONMENT = development;
+					ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+					CODE_SIGN_ENTITLEMENTS = App/HeadInClouds.entitlements;
+					CODE_SIGN_STYLE = Automatic;
+					CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = K338A7B5QX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEAD_IN_CLOUDS_API_BASE_URL = "https://api.headinclouds.cn";
+				HEAD_IN_CLOUDS_EVENTS_URL = "https://api.headinclouds.cn/events";
+				HEAD_IN_CLOUDS_IAP_ENVIRONMENT = sandbox;
+				HEAD_IN_CLOUDS_SHARE_BASE_URL = "https://headinclouds.cn";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILD_DIR)/../../SourcePackages/checkouts/WechatOpenSDK/Sources/WechatOpenSDK.xcframework/ios-arm64/WechatOpenSDK.framework/Headers",
+					"$(BUILD_DIR)/../../SourcePackages/checkouts/WechatOpenSDK/Sources/WechatOpenSDK.xcframework/ios-arm64_x86_64-simulator/WechatOpenSDK.framework/Headers",
+				);
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.headintheclouds.app.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/HeadInClouds-Bridging-Header.h";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A60000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+					APS_ENVIRONMENT = production;
+					ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+					CODE_SIGN_ENTITLEMENTS = App/HeadInClouds.entitlements;
+					CODE_SIGN_STYLE = Automatic;
+					CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = K338A7B5QX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEAD_IN_CLOUDS_API_BASE_URL = "https://api.headinclouds.cn";
+				HEAD_IN_CLOUDS_EVENTS_URL = "https://api.headinclouds.cn/events";
+				HEAD_IN_CLOUDS_IAP_ENVIRONMENT = sandbox;
+				HEAD_IN_CLOUDS_SHARE_BASE_URL = "https://headinclouds.cn";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILD_DIR)/../../SourcePackages/checkouts/WechatOpenSDK/Sources/WechatOpenSDK.xcframework/ios-arm64/WechatOpenSDK.framework/Headers",
+					"$(BUILD_DIR)/../../SourcePackages/checkouts/WechatOpenSDK/Sources/WechatOpenSDK.xcframework/ios-arm64_x86_64-simulator/WechatOpenSDK.framework/Headers",
+				);
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+					"-framework",
+					WebKit,
+				);
+					PRODUCT_BUNDLE_IDENTIFIER = com.headintheclouds.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App/HeadInClouds-Bridging-Header.h";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C80000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = K338A7B5QX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headintheclouds.app.dev.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = HeadInClouds;
+			};
+			name = Debug;
+		};
+		C80000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = K338A7B5QX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headintheclouds.app.dev.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = HeadInClouds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000000000000000000001 /* Build configuration list for PBXProject "HeadInClouds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000001 /* Debug */,
+				A60000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000002 /* Build configuration list for PBXNativeTarget "HeadInClouds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000003 /* Debug */,
+				A60000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70000000000000000000001 /* Build configuration list for PBXNativeTarget "HeadInCloudsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C80000000000000000000001 /* Debug */,
+				C80000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D20000000000000000000001 /* XCRemoteSwiftPackageReference "WechatOpenSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yanyin1986/WechatOpenSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D20000000000000000000002 /* WechatOpenSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D20000000000000000000001 /* XCRemoteSwiftPackageReference "WechatOpenSDK" */;
+			productName = WechatOpenSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}

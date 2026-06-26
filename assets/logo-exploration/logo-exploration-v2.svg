@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1542" height="1376" viewBox="0 0 1542 1376">
+  <rect width="1542" height="1376" fill="#F5F1EA"/>
+  <text x="70" y="82" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="800" fill="#252B2A">Head in the Clouds · Logo v2</text>
+  <text x="70" y="124" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="20" fill="#6F7773">Light background reset. No aircraft, no literal clouds, no vintage navy-gold palette.</text>
+  
+        <g transform="translate(70 170)">
+          <rect width="430" height="520" rx="36" fill="#FFFFFF" stroke="#E5DDD2"/>
+          <svg x="54" y="42" width="238" height="238" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgBreath" cx="34%" cy="22%" r="72%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="62%" stop-color="#F8F4EC"/>
+          <stop offset="100%" stop-color="#EFE8DC"/>
+        </radialGradient>
+        <linearGradient id="commaFill" x1="284" y1="182" x2="748" y2="826">
+          <stop offset="0%" stop-color="#465F59"/>
+          <stop offset="100%" stop-color="#273836"/>
+        </linearGradient>
+        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#7C6D5F" flood-opacity=".22"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgBreath)"/>
+      <path filter="url(#softShadow)" fill="url(#commaFill)" d="M548 204c128 9 224 108 226 237 3 174-139 331-315 350-106 12-197-33-223-115-24-76 15-152 88-176 58-19 122 5 151 55 25 44 17 99-19 133 75-30 127-111 123-203-5-111-85-190-190-190-35 0-69 8-101 24 48-78 136-122 260-115Z"/>
+      <circle cx="682" cy="314" r="26" fill="#D9896F"/>
+    </svg>
+          <svg x="310" y="92" width="76" height="76" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgBreath" cx="34%" cy="22%" r="72%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="62%" stop-color="#F8F4EC"/>
+          <stop offset="100%" stop-color="#EFE8DC"/>
+        </radialGradient>
+        <linearGradient id="commaFill" x1="284" y1="182" x2="748" y2="826">
+          <stop offset="0%" stop-color="#465F59"/>
+          <stop offset="100%" stop-color="#273836"/>
+        </linearGradient>
+        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#7C6D5F" flood-opacity=".22"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgBreath)"/>
+      <path filter="url(#softShadow)" fill="url(#commaFill)" d="M548 204c128 9 224 108 226 237 3 174-139 331-315 350-106 12-197-33-223-115-24-76 15-152 88-176 58-19 122 5 151 55 25 44 17 99-19 133 75-30 127-111 123-203-5-111-85-190-190-190-35 0-69 8-101 24 48-78 136-122 260-115Z"/>
+      <circle cx="682" cy="314" r="26" fill="#D9896F"/>
+    </svg>
+          <svg x="336" y="210" width="28" height="28" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgBreath" cx="34%" cy="22%" r="72%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="62%" stop-color="#F8F4EC"/>
+          <stop offset="100%" stop-color="#EFE8DC"/>
+        </radialGradient>
+        <linearGradient id="commaFill" x1="284" y1="182" x2="748" y2="826">
+          <stop offset="0%" stop-color="#465F59"/>
+          <stop offset="100%" stop-color="#273836"/>
+        </linearGradient>
+        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#7C6D5F" flood-opacity=".22"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgBreath)"/>
+      <path filter="url(#softShadow)" fill="url(#commaFill)" d="M548 204c128 9 224 108 226 237 3 174-139 331-315 350-106 12-197-33-223-115-24-76 15-152 88-176 58-19 122 5 151 55 25 44 17 99-19 133 75-30 127-111 123-203-5-111-85-190-190-190-35 0-69 8-101 24 48-78 136-122 260-115Z"/>
+      <circle cx="682" cy="314" r="26" fill="#D9896F"/>
+    </svg>
+          <text x="54" y="350" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700" fill="#252B2A">01 Breath Comma</text>
+          <text x="54" y="392" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#68716E">An unsent sentence as a soft breath mark.</text>
+          <text x="54" y="452" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#B28D72">1024 / 108 / 28 PX CHECK</text>
+        </g>
+      
+
+        <g transform="translate(556 170)">
+          <rect width="430" height="520" rx="36" fill="#FFFFFF" stroke="#E5DDD2"/>
+          <svg x="54" y="42" width="238" height="238" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgPause" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFDF9"/>
+          <stop offset="100%" stop-color="#F1E7D7"/>
+        </linearGradient>
+        <filter id="lineShadow" x="-20%" y="-40%" width="140%" height="180%">
+          <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#A99782" flood-opacity=".23"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgPause)"/>
+      <g filter="url(#lineShadow)" stroke="#303A38" stroke-linecap="round" stroke-width="76">
+        <path d="M242 504H430"/>
+        <path d="M594 504H782"/>
+      </g>
+      <circle cx="512" cy="504" r="54" fill="#DE8068"/>
+      <circle cx="512" cy="504" r="18" fill="#FFF8EF" opacity=".86"/>
+    </svg>
+          <svg x="310" y="92" width="76" height="76" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgPause" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFDF9"/>
+          <stop offset="100%" stop-color="#F1E7D7"/>
+        </linearGradient>
+        <filter id="lineShadow" x="-20%" y="-40%" width="140%" height="180%">
+          <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#A99782" flood-opacity=".23"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgPause)"/>
+      <g filter="url(#lineShadow)" stroke="#303A38" stroke-linecap="round" stroke-width="76">
+        <path d="M242 504H430"/>
+        <path d="M594 504H782"/>
+      </g>
+      <circle cx="512" cy="504" r="54" fill="#DE8068"/>
+      <circle cx="512" cy="504" r="18" fill="#FFF8EF" opacity=".86"/>
+    </svg>
+          <svg x="336" y="210" width="28" height="28" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgPause" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFDF9"/>
+          <stop offset="100%" stop-color="#F1E7D7"/>
+        </linearGradient>
+        <filter id="lineShadow" x="-20%" y="-40%" width="140%" height="180%">
+          <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#A99782" flood-opacity=".23"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgPause)"/>
+      <g filter="url(#lineShadow)" stroke="#303A38" stroke-linecap="round" stroke-width="76">
+        <path d="M242 504H430"/>
+        <path d="M594 504H782"/>
+      </g>
+      <circle cx="512" cy="504" r="54" fill="#DE8068"/>
+      <circle cx="512" cy="504" r="18" fill="#FFF8EF" opacity=".86"/>
+    </svg>
+          <text x="54" y="350" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700" fill="#252B2A">02 Sentence Pause</text>
+          <text x="54" y="392" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#68716E">A line stopped mid-air, built for 28px clarity.</text>
+          <text x="54" y="452" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#B28D72">1024 / 108 / 28 PX CHECK</text>
+        </g>
+      
+
+        <g transform="translate(1042 170)">
+          <rect width="430" height="520" rx="36" fill="#FFFFFF" stroke="#E5DDD2"/>
+          <svg x="54" y="42" width="238" height="238" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgFold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FBFAF4"/>
+          <stop offset="100%" stop-color="#DCE7DD"/>
+        </linearGradient>
+        <linearGradient id="paperFold" x1="210" y1="420" x2="808" y2="618">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="58%" stop-color="#F7EEDB"/>
+          <stop offset="100%" stop-color="#E1CDAE"/>
+        </linearGradient>
+        <filter id="foldShadow" x="-20%" y="-50%" width="140%" height="200%">
+          <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#7F8A82" flood-opacity=".25"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgFold)"/>
+      <path filter="url(#foldShadow)" fill="url(#paperFold)" d="M202 555 412 430l150 88 246-113 14 94-259 123-151-88-196 116-14-95Z"/>
+      <path d="M412 430 412 534 562 518Z" fill="#E8D7BB" opacity=".72"/>
+      <path d="M563 622 563 518 808 405Z" fill="#C8B593" opacity=".35"/>
+    </svg>
+          <svg x="310" y="92" width="76" height="76" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgFold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FBFAF4"/>
+          <stop offset="100%" stop-color="#DCE7DD"/>
+        </linearGradient>
+        <linearGradient id="paperFold" x1="210" y1="420" x2="808" y2="618">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="58%" stop-color="#F7EEDB"/>
+          <stop offset="100%" stop-color="#E1CDAE"/>
+        </linearGradient>
+        <filter id="foldShadow" x="-20%" y="-50%" width="140%" height="200%">
+          <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#7F8A82" flood-opacity=".25"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgFold)"/>
+      <path filter="url(#foldShadow)" fill="url(#paperFold)" d="M202 555 412 430l150 88 246-113 14 94-259 123-151-88-196 116-14-95Z"/>
+      <path d="M412 430 412 534 562 518Z" fill="#E8D7BB" opacity=".72"/>
+      <path d="M563 622 563 518 808 405Z" fill="#C8B593" opacity=".35"/>
+    </svg>
+          <svg x="336" y="210" width="28" height="28" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgFold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FBFAF4"/>
+          <stop offset="100%" stop-color="#DCE7DD"/>
+        </linearGradient>
+        <linearGradient id="paperFold" x1="210" y1="420" x2="808" y2="618">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="58%" stop-color="#F7EEDB"/>
+          <stop offset="100%" stop-color="#E1CDAE"/>
+        </linearGradient>
+        <filter id="foldShadow" x="-20%" y="-50%" width="140%" height="200%">
+          <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#7F8A82" flood-opacity=".25"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgFold)"/>
+      <path filter="url(#foldShadow)" fill="url(#paperFold)" d="M202 555 412 430l150 88 246-113 14 94-259 123-151-88-196 116-14-95Z"/>
+      <path d="M412 430 412 534 562 518Z" fill="#E8D7BB" opacity=".72"/>
+      <path d="M563 622 563 518 808 405Z" fill="#C8B593" opacity=".35"/>
+    </svg>
+          <text x="54" y="350" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700" fill="#252B2A">03 Folded Sentence</text>
+          <text x="54" y="392" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#68716E">A sentence folded once.</text>
+          <text x="54" y="452" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#B28D72">1024 / 108 / 28 PX CHECK</text>
+        </g>
+      
+
+        <g transform="translate(70 746)">
+          <rect width="430" height="520" rx="36" fill="#FFFFFF" stroke="#E5DDD2"/>
+          <svg x="54" y="42" width="238" height="238" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgQuote" cx="52%" cy="18%" r="78%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#ECE5DA"/>
+        </radialGradient>
+        <linearGradient id="quoteFill" x1="340" y1="220" x2="700" y2="770">
+          <stop offset="0%" stop-color="#8CA7A0"/>
+          <stop offset="100%" stop-color="#435F59"/>
+        </linearGradient>
+        <filter id="quoteShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#756D62" flood-opacity=".20"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgQuote)"/>
+      <g filter="url(#quoteShadow)" fill="url(#quoteFill)">
+        <path d="M356 625c0-144 85-250 226-311l45 77c-84 45-130 96-138 154 64 5 111 53 111 116 0 70-53 122-123 122-76 0-121-61-121-158Z"/>
+        <circle cx="655" cy="381" r="44" fill="#E3886F"/>
+      </g>
+    </svg>
+          <svg x="310" y="92" width="76" height="76" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgQuote" cx="52%" cy="18%" r="78%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#ECE5DA"/>
+        </radialGradient>
+        <linearGradient id="quoteFill" x1="340" y1="220" x2="700" y2="770">
+          <stop offset="0%" stop-color="#8CA7A0"/>
+          <stop offset="100%" stop-color="#435F59"/>
+        </linearGradient>
+        <filter id="quoteShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#756D62" flood-opacity=".20"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgQuote)"/>
+      <g filter="url(#quoteShadow)" fill="url(#quoteFill)">
+        <path d="M356 625c0-144 85-250 226-311l45 77c-84 45-130 96-138 154 64 5 111 53 111 116 0 70-53 122-123 122-76 0-121-61-121-158Z"/>
+        <circle cx="655" cy="381" r="44" fill="#E3886F"/>
+      </g>
+    </svg>
+          <svg x="336" y="210" width="28" height="28" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgQuote" cx="52%" cy="18%" r="78%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#ECE5DA"/>
+        </radialGradient>
+        <linearGradient id="quoteFill" x1="340" y1="220" x2="700" y2="770">
+          <stop offset="0%" stop-color="#8CA7A0"/>
+          <stop offset="100%" stop-color="#435F59"/>
+        </linearGradient>
+        <filter id="quoteShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#756D62" flood-opacity=".20"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgQuote)"/>
+      <g filter="url(#quoteShadow)" fill="url(#quoteFill)">
+        <path d="M356 625c0-144 85-250 226-311l45 77c-84 45-130 96-138 154 64 5 111 53 111 116 0 70-53 122-123 122-76 0-121-61-121-158Z"/>
+        <circle cx="655" cy="381" r="44" fill="#E3886F"/>
+      </g>
+    </svg>
+          <text x="54" y="350" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700" fill="#252B2A">04 Quiet Quote</text>
+          <text x="54" y="392" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#68716E">A private quote mark, not a chat bubble.</text>
+          <text x="54" y="452" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#B28D72">1024 / 108 / 28 PX CHECK</text>
+        </g>
+      
+
+        <g transform="translate(556 746)">
+          <rect width="430" height="520" rx="36" fill="#FFFFFF" stroke="#E5DDD2"/>
+          <svg x="54" y="42" width="238" height="238" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgThread" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#E9EFEA"/>
+        </linearGradient>
+        <filter id="threadShadow" x="-15%" y="-30%" width="130%" height="160%">
+          <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#9A8D80" flood-opacity=".20"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgThread)"/>
+      <path filter="url(#threadShadow)" d="M250 590c144-212 383-265 538-126" fill="none" stroke="#35413E" stroke-width="64" stroke-linecap="round"/>
+      <path d="M250 590c144-212 383-265 538-126" fill="none" stroke="#F2E5CE" stroke-width="30" stroke-linecap="round"/>
+      <circle cx="734" cy="458" r="48" fill="#D9836B"/>
+    </svg>
+          <svg x="310" y="92" width="76" height="76" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgThread" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#E9EFEA"/>
+        </linearGradient>
+        <filter id="threadShadow" x="-15%" y="-30%" width="130%" height="160%">
+          <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#9A8D80" flood-opacity=".20"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgThread)"/>
+      <path filter="url(#threadShadow)" d="M250 590c144-212 383-265 538-126" fill="none" stroke="#35413E" stroke-width="64" stroke-linecap="round"/>
+      <path d="M250 590c144-212 383-265 538-126" fill="none" stroke="#F2E5CE" stroke-width="30" stroke-linecap="round"/>
+      <circle cx="734" cy="458" r="48" fill="#D9836B"/>
+    </svg>
+          <svg x="336" y="210" width="28" height="28" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="bgThread" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#E9EFEA"/>
+        </linearGradient>
+        <filter id="threadShadow" x="-15%" y="-30%" width="130%" height="160%">
+          <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#9A8D80" flood-opacity=".20"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgThread)"/>
+      <path filter="url(#threadShadow)" d="M250 590c144-212 383-265 538-126" fill="none" stroke="#35413E" stroke-width="64" stroke-linecap="round"/>
+      <path d="M250 590c144-212 383-265 538-126" fill="none" stroke="#F2E5CE" stroke-width="30" stroke-linecap="round"/>
+      <circle cx="734" cy="458" r="48" fill="#D9836B"/>
+    </svg>
+          <text x="54" y="350" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700" fill="#252B2A">05 Air Thread</text>
+          <text x="54" y="392" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#68716E">A shared path reduced to one thread.</text>
+          <text x="54" y="452" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#B28D72">1024 / 108 / 28 PX CHECK</text>
+        </g>
+      
+
+        <g transform="translate(1042 746)">
+          <rect width="430" height="520" rx="36" fill="#FFFFFF" stroke="#E5DDD2"/>
+          <svg x="54" y="42" width="238" height="238" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgPeriod" cx="45%" cy="28%" r="74%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#EEE5D8"/>
+        </radialGradient>
+        <radialGradient id="periodFill" cx="38%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#E99A82"/>
+          <stop offset="100%" stop-color="#526B64"/>
+        </radialGradient>
+        <filter id="periodShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="30" stdDeviation="32" flood-color="#8C8175" flood-opacity=".24"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgPeriod)"/>
+      <circle filter="url(#periodShadow)" cx="512" cy="512" r="178" fill="url(#periodFill)"/>
+      <circle cx="447" cy="442" r="46" fill="#FFF6EA" opacity=".86"/>
+    </svg>
+          <svg x="310" y="92" width="76" height="76" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgPeriod" cx="45%" cy="28%" r="74%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#EEE5D8"/>
+        </radialGradient>
+        <radialGradient id="periodFill" cx="38%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#E99A82"/>
+          <stop offset="100%" stop-color="#526B64"/>
+        </radialGradient>
+        <filter id="periodShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="30" stdDeviation="32" flood-color="#8C8175" flood-opacity=".24"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgPeriod)"/>
+      <circle filter="url(#periodShadow)" cx="512" cy="512" r="178" fill="url(#periodFill)"/>
+      <circle cx="447" cy="442" r="46" fill="#FFF6EA" opacity=".86"/>
+    </svg>
+          <svg x="336" y="210" width="28" height="28" viewBox="0 0 1024 1024">
+      <defs>
+        <radialGradient id="bgPeriod" cx="45%" cy="28%" r="74%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#EEE5D8"/>
+        </radialGradient>
+        <radialGradient id="periodFill" cx="38%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#E99A82"/>
+          <stop offset="100%" stop-color="#526B64"/>
+        </radialGradient>
+        <filter id="periodShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="30" stdDeviation="32" flood-color="#8C8175" flood-opacity=".24"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgPeriod)"/>
+      <circle filter="url(#periodShadow)" cx="512" cy="512" r="178" fill="url(#periodFill)"/>
+      <circle cx="447" cy="442" r="46" fill="#FFF6EA" opacity=".86"/>
+    </svg>
+          <text x="54" y="350" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="700" fill="#252B2A">06 Soft Period</text>
+          <text x="54" y="392" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#68716E">The smallest possible completion mark.</text>
+          <text x="54" y="452" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#B28D72">1024 / 108 / 28 PX CHECK</text>
+        </g>
+      
+</svg>

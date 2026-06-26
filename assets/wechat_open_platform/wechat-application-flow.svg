@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7F1E2"/>
+      <stop offset="1" stop-color="#E9D5A4"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#081224" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto">
+      <path d="M2 2L14 8L2 14Z" fill="#23395D"/>
+    </marker>
+    <style>
+      .title { font: 700 44px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #081224; }
+      .subtitle { font: 400 24px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #4B5870; }
+      .section { font: 700 26px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #C39A45; letter-spacing: 4px; }
+      .box-title { font: 700 26px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #081224; }
+      .box-copy { font: 400 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #4B5870; }
+      .small { font: 400 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #69758A; }
+    </style>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect x="64" y="64" width="1472" height="1072" rx="48" fill="#FFF9EA" opacity="0.9"/>
+  <text x="110" y="145" class="title">云上心事 WeChat Open Platform 应用运行流程</text>
+  <text x="110" y="188" class="subtitle">用于说明移动应用的核心业务、微信登录/绑定、微信分享与 Universal Link 回流路径</text>
+
+  <text x="110" y="270" class="section">CORE APP FLOW</text>
+  <g filter="url(#shadow)">
+    <rect x="110" y="310" width="290" height="150" rx="28" fill="#FFFFFF"/>
+    <text x="140" y="365" class="box-title">1. 写下一句</text>
+    <text x="140" y="405" class="box-copy">用户以游客身份进入</text>
+    <text x="140" y="435" class="box-copy">记录本次飞行心事</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="500" y="310" width="290" height="150" rx="28" fill="#FFFFFF"/>
+    <text x="530" y="365" class="box-title">2. 生成 Cloud Card</text>
+    <text x="530" y="405" class="box-copy">本地生成私人明信片</text>
+    <text x="530" y="435" class="box-copy">可保存或继续补航班</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="890" y="310" width="290" height="150" rx="28" fill="#FFFFFF"/>
+    <text x="920" y="365" class="box-title">3. 验证航班</text>
+    <text x="920" y="405" class="box-copy">上传登机牌/行程截图</text>
+    <text x="920" y="435" class="box-copy">解锁同班机发布</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="1280" y="310" width="210" height="150" rx="28" fill="#FFFFFF"/>
+    <text x="1310" y="365" class="box-title">4. 同班机</text>
+    <text x="1310" y="405" class="box-copy">发布笔记</text>
+    <text x="1310" y="435" class="box-copy">评论/通知</text>
+  </g>
+  <path d="M410 385H485" stroke="#23395D" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M800 385H875" stroke="#23395D" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1190 385H1265" stroke="#23395D" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <text x="110" y="575" class="section">WECHAT LOGIN / BINDING</text>
+  <g filter="url(#shadow)">
+    <rect x="110" y="615" width="330" height="150" rx="28" fill="#F4FAF4"/>
+    <text x="140" y="670" class="box-title">A. 点击微信登录</text>
+    <text x="140" y="710" class="box-copy">用户在账号页选择</text>
+    <text x="140" y="740" class="box-copy">微信登录或绑定</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="535" y="615" width="330" height="150" rx="28" fill="#F4FAF4"/>
+    <text x="565" y="670" class="box-title">B. 调起微信授权</text>
+    <text x="565" y="710" class="box-copy">iOS App 通过微信 SDK</text>
+    <text x="565" y="740" class="box-copy">获取授权 code</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="960" y="615" width="330" height="150" rx="28" fill="#F4FAF4"/>
+    <text x="990" y="670" class="box-title">C. 服务端换取身份</text>
+    <text x="990" y="710" class="box-copy">自有 API 换取 openid</text>
+    <text x="990" y="740" class="box-copy">并按 unionid 合并账号</text>
+  </g>
+  <path d="M450 690H520" stroke="#1F7A3D" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M875 690H945" stroke="#1F7A3D" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <text x="110" y="880" class="section">WECHAT SHARE / UNIVERSAL LINK</text>
+  <g filter="url(#shadow)">
+    <rect x="110" y="920" width="330" height="150" rx="28" fill="#EEF4FF"/>
+    <text x="140" y="975" class="box-title">D. 分享卡片</text>
+    <text x="140" y="1015" class="box-copy">用户将 Cloud Card</text>
+    <text x="140" y="1045" class="box-copy">分享到微信/朋友圈</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="535" y="920" width="330" height="150" rx="28" fill="#EEF4FF"/>
+    <text x="565" y="975" class="box-title">E. 打开落地页</text>
+    <text x="565" y="1015" class="box-copy">朋友通过链接进入</text>
+    <text x="565" y="1045" class="box-copy">同班机笔记页面</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="960" y="920" width="330" height="150" rx="28" fill="#EEF4FF"/>
+    <text x="990" y="975" class="box-title">F. 回到 App</text>
+    <text x="990" y="1015" class="box-copy">已安装走 Universal Link</text>
+    <text x="990" y="1045" class="box-copy">未安装保留 Web 预览</text>
+  </g>
+  <path d="M450 995H520" stroke="#31588D" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M875 995H945" stroke="#31588D" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="110" y="1110" class="small">隐私边界：公开分享和同班机页面不展示姓名、票号、证件号和具体座位号；航班验证只用于同班机权限，不阻塞私人卡片生成。</text>
+</svg>

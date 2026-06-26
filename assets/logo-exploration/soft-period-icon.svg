@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+      <defs>
+        <radialGradient id="bgPeriod" cx="45%" cy="28%" r="74%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#EEE5D8"/>
+        </radialGradient>
+        <radialGradient id="periodFill" cx="38%" cy="30%" r="70%">
+          <stop offset="0%" stop-color="#E99A82"/>
+          <stop offset="100%" stop-color="#526B64"/>
+        </radialGradient>
+        <filter id="periodShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="30" stdDeviation="32" flood-color="#8C8175" flood-opacity=".24"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgPeriod)"/>
+      <circle filter="url(#periodShadow)" cx="512" cy="512" r="178" fill="url(#periodFill)"/>
+      <circle cx="447" cy="442" r="46" fill="#FFF6EA" opacity=".86"/>
+    
+</svg>

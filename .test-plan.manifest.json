@@ -1,0 +1,67 @@
+{
+  "stage": "test-plan",
+  "role": "roles/test.md",
+  "status": "completed",
+  "project": "head_in_clouds",
+  "opportunity_id": "2026-05-15-verified-flight-note",
+  "prd_version": "v2.4",
+  "artifacts": [
+    "head_in_clouds/TEST_PLAN.md"
+  ],
+  "requires_human_review": true,
+  "completed_at": "2026-05-20T05:38:16Z",
+  "decision": "go",
+  "next": [
+    "dev"
+  ],
+  "notes": "Updated test plan for PRD v2.4 expression-first / verification-later model. P0 38 / P1 20 / P2 14; 7 capability thresholds; 11 funnel metrics; analytics covers PRD 13.3 event groups plus QA baseline 6 and 5 analytics security checks. Old photo-first, 30-300 word, post_generated/post_published gates are superseded.",
+  "p0_count": 38,
+  "p1_count": 20,
+  "p2_count": 14,
+  "boundary_case_count": 14,
+  "analytics_case_groups": 45,
+  "analytics_security_checks": 5,
+  "capability_thresholds": [
+    "C-1 compose_started / landing_viewed >= 45%",
+    "C-2 private_card_generated / compose_started >= 55% north star, minimum 45% gate",
+    "C-3 private_card_shared / private_card_generated >= 25%, minimum 20% gate",
+    "C-4 share-worthy card blind test >= 6/10, including ordinary UGC",
+    "C-5 verification-later boundary understood by >= 8/10 and unverified same-flight publish/comment/notification blocked",
+    "C-6 offline_sync_completed / offline_sync_started >= 95% with zero lost drafts",
+    "C-7 zero public PII or exact seat exposure"
+  ],
+  "funnel_gates": [
+    "onboarding_completed / app_first_launched >= 70%",
+    "compose_started / landing_viewed >= 45%",
+    "private_card_generated / compose_started >= 55% north star, 45% minimum gate",
+    "private_card_generated within 60s / compose_started >= 45%",
+    "flight_verification_started / private_card_generated >= 25%",
+    "same_flight_publish_completed / flight_verification_started >= 60%",
+    "private_card_shared / private_card_generated >= 25%",
+    "boarding_reminder_opened / boarding_reminder_sent >= 20%",
+    "offline_sync_completed / offline_sync_started >= 95%",
+    "share landing continuation >= 15%",
+    "same_flight_note_notification_opened / same_flight_note_notification_sent >= 18%"
+  ],
+  "supersedes": {
+    "previous_plan_version": "2026-05-16 photo-first plan",
+    "removed_gates": [
+      "capture_started / landing_viewed as primary activation gate",
+      "30-300 word requirement",
+      "post_generated / post_published funnel naming",
+      "flight proof required before compose"
+    ]
+  },
+  "hard_no_go_conditions": [
+    "Writing or private Cloud Card generation is blocked by flight verification",
+    "Unverified users can publish/comment/receive same-flight notifications",
+    "Offline draft or queued card can be lost",
+    "Public surfaces expose exact seat, name, ticket number, ID/passport, phone, or raw proof content",
+    "Cloud Card includes App Store badge or hard download CTA",
+    "Any P0 case fails",
+    "Any baseline analytics event or PRD 13.3 critical event is missing"
+  ],
+  "human_approved_at": "2026-05-20T05:42:12.137Z",
+  "human_rejected_at": "2026-06-26T07:08:30.765Z",
+  "reject_note": "Retroactive design gate: QA plan must include DESIGN_SPEC visual and IA P0 checks"
+}

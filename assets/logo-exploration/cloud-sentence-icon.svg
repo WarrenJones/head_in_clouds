@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bgCloudSentence" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#F8FBF9"/>
+          <stop offset="62%" stop-color="#EEF5F2"/>
+          <stop offset="100%" stop-color="#F6EFE5"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgCloudSentence)"/>
+      <path d="M172 690C270 574 402 542 520 618C636 692 748 628 852 546V852H172Z" fill="#FFFFFF"/>
+      <path d="M244 536H572" fill="none" stroke="#26302E" stroke-width="70" stroke-linecap="round"/>
+      <circle cx="640" cy="536" r="43" fill="#D97360"/>
+      <path d="M306 676C402 616 508 622 622 686" fill="none" stroke="#AABAB4" stroke-width="36" stroke-linecap="round"/>
+    
+</svg>

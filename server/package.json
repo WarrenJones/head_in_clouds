@@ -1,0 +1,26 @@
+{
+  "name": "head-in-clouds-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.mjs",
+    "start": "node src/server.mjs",
+    "check:deploy": "node scripts/check-deploy-config.mjs",
+    "check:release": "node scripts/release-preflight.mjs",
+    "db:migrate": "node scripts/migrate-postgres.mjs",
+    "dispatch:notifications": "node src/dispatch-notifications.mjs",
+    "smoke:app:staging": "node scripts/staging-app-smoke.mjs",
+    "smoke:events:contract": "node scripts/contract-event-smoke.mjs",
+    "smoke:events:contract:local": "HIC_CONTRACT_SMOKE_LOCAL=1 node scripts/contract-event-smoke.mjs",
+    "smoke:events": "node scripts/local-event-smoke.mjs",
+    "smoke:events:readback": "node scripts/staging-event-readback.mjs",
+    "smoke:events:summary": "node scripts/staging-event-summary.mjs",
+    "smoke:events:staging": "node scripts/staging-event-smoke.mjs",
+    "smoke:iap:app-store-notification": "node scripts/app-store-notification-smoke.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.16.0"
+  }
+}

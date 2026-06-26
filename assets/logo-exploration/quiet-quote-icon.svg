@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+      <defs>
+        <radialGradient id="bgQuote" cx="52%" cy="18%" r="78%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#ECE5DA"/>
+        </radialGradient>
+        <linearGradient id="quoteFill" x1="340" y1="220" x2="700" y2="770">
+          <stop offset="0%" stop-color="#8CA7A0"/>
+          <stop offset="100%" stop-color="#435F59"/>
+        </linearGradient>
+        <filter id="quoteShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#756D62" flood-opacity=".20"/>
+        </filter>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgQuote)"/>
+      <g filter="url(#quoteShadow)" fill="url(#quoteFill)">
+        <path d="M356 625c0-144 85-250 226-311l45 77c-84 45-130 96-138 154 64 5 111 53 111 116 0 70-53 122-123 122-76 0-121-61-121-158Z"/>
+        <circle cx="655" cy="381" r="44" fill="#E3886F"/>
+      </g>
+    
+</svg>

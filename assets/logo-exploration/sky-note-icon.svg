@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bgSkyNote" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="100%" stop-color="#F2ECE3"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgSkyNote)"/>
+      <rect x="296" y="332" width="432" height="244" rx="54" fill="#26302E"/>
+      <path d="M374 432H568" fill="none" stroke="#F8F2E9" stroke-width="36" stroke-linecap="round"/>
+      <path d="M374 496H646" fill="none" stroke="#AABAB4" stroke-width="30" stroke-linecap="round"/>
+      <circle cx="668" cy="424" r="36" fill="#D97360"/>
+      <path d="M216 702C358 612 516 626 784 724" fill="none" stroke="#CAD8D3" stroke-width="52" stroke-linecap="round"/>
+    
+</svg>

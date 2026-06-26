@@ -1,0 +1,31 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    D2 · Cloud Pause  (v6 — single-path comma)
+
+    The entire comma is ONE closed path: two 135° SVG arcs form
+    the circular head, bezier curves form the tail.
+    No more circle + separate tail — head/tail join is mathematically exact.
+
+    Circle: cx=512 cy=360 r=140
+    Arc endpoints (±45° from bottom):
+      lower-right: (611, 459)  [angle 45°]
+      lower-left:  (413, 459)  [angle 135°]
+
+    Path goes:
+      top (512,220)
+      → CW arc to lower-right (611,459)      right half of head circle
+      → bezier curves down+around             comma tail
+      → CW arc back to top (512,220)          left half of head circle
+  -->
+  <rect width="1024" height="1024" rx="229" fill="#0A0F1E"/>
+
+  <path d="M 512,220
+           A 140 140 0 0 1 611,459
+           C 622,528  598,664  562,744
+           C 536,806  504,820  474,804
+           C 444,788  420,754  418,694
+           C 416,634  418,548  413,459
+           A 140 140 0 0 1 512,220
+           Z"
+        fill="#EDE0C4"/>
+</svg>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1542" height="1412" viewBox="0 0 1542 1412">
+  <rect width="1542" height="1412" fill="#F7F1E8"/>
+  <text x="70" y="78" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="800" fill="#24302D">Head in the Clouds · Logo v8 Warm Theme</text>
+  <text x="70" y="120" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="20" fill="#6A746F">Based on v7-06 Warm Control. Goal: keep thematic warmth without falling back to old beige stationery or gold aviation.</text>
+  <text x="70" y="150" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#8A8277">The icon stays as the v6-02 glyph. This pass only tunes the warm brand system around it.</text>
+  
+        <g transform="translate(70 182)">
+          <rect width="430" height="532" rx="34" fill="#FFFFFF" stroke="#E4DCD2"/>
+          <svg x="56" y="42" width="236" height="236" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FBF6EE"/>
+          <stop offset="54%" stop-color="#F6EFE5"/>
+          <stop offset="100%" stop-color="#EEF5F2"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A9B9B4" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="312" y="90" width="76" height="76" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FBF6EE"/>
+          <stop offset="54%" stop-color="#F6EFE5"/>
+          <stop offset="100%" stop-color="#EEF5F2"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A9B9B4" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="338" y="206" width="28" height="28" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FBF6EE"/>
+          <stop offset="54%" stop-color="#F6EFE5"/>
+          <stop offset="100%" stop-color="#EEF5F2"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A9B9B4" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <text x="56" y="342" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="750" fill="#252B2A">01 Warm Air</text>
+          <text x="56" y="383" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#68716E">Closest to v7-06, but cleaner and less stationery-like.</text>
+          <text x="56" y="438" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#A17C67">V7-06 BASE / 108 / 28 PX CHECK</text>
+          <text x="56" y="478" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#52615F">#24302D · #A9B9B4 · #D87561</text>
+        </g>
+      
+
+        <g transform="translate(556 182)">
+          <rect width="430" height="532" rx="34" fill="#FFFFFF" stroke="#E4DCD2"/>
+          <svg x="56" y="42" width="236" height="236" viewBox="0 0 1024 1024">
+
+      <defs>
+        <radialGradient id="bg" cx="36%" cy="22%" r="82%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="56%" stop-color="#F8F0E3"/>
+          <stop offset="100%" stop-color="#EAF3F1"/>
+        </radialGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#AEC0BB" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="312" y="90" width="76" height="76" viewBox="0 0 1024 1024">
+
+      <defs>
+        <radialGradient id="bg" cx="36%" cy="22%" r="82%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="56%" stop-color="#F8F0E3"/>
+          <stop offset="100%" stop-color="#EAF3F1"/>
+        </radialGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#AEC0BB" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="338" y="206" width="28" height="28" viewBox="0 0 1024 1024">
+
+      <defs>
+        <radialGradient id="bg" cx="36%" cy="22%" r="82%">
+          <stop offset="0%" stop-color="#FFFFFF"/>
+          <stop offset="56%" stop-color="#F8F0E3"/>
+          <stop offset="100%" stop-color="#EAF3F1"/>
+        </radialGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#AEC0BB" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <text x="56" y="342" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="750" fill="#252B2A">02 Cloud Paper</text>
+          <text x="56" y="383" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#68716E">Paper memory, but lifted with a cooler cloud edge.</text>
+          <text x="56" y="438" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#A17C67">V7-06 BASE / 108 / 28 PX CHECK</text>
+          <text x="56" y="478" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#52615F">#24302D · #AEC0BB · #D87561</text>
+        </g>
+      
+
+        <g transform="translate(1042 182)">
+          <rect width="430" height="532" rx="34" fill="#FFFFFF" stroke="#E4DCD2"/>
+          <svg x="56" y="42" width="236" height="236" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF4E8"/>
+          <stop offset="48%" stop-color="#F9F3EA"/>
+          <stop offset="100%" stop-color="#F0F6F4"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D66F5E"/>
+<path d="M440 698H588" fill="none" stroke="#A9B9B4" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="312" y="90" width="76" height="76" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF4E8"/>
+          <stop offset="48%" stop-color="#F9F3EA"/>
+          <stop offset="100%" stop-color="#F0F6F4"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D66F5E"/>
+<path d="M440 698H588" fill="none" stroke="#A9B9B4" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="338" y="206" width="28" height="28" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF4E8"/>
+          <stop offset="48%" stop-color="#F9F3EA"/>
+          <stop offset="100%" stop-color="#F0F6F4"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D66F5E"/>
+<path d="M440 698H588" fill="none" stroke="#A9B9B4" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <text x="56" y="342" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="750" fill="#252B2A">03 Dawn Letter</text>
+          <text x="56" y="383" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#68716E">A more emotional dawn tone without vintage gold.</text>
+          <text x="56" y="438" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#A17C67">V7-06 BASE / 108 / 28 PX CHECK</text>
+          <text x="56" y="478" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#52615F">#24302D · #A9B9B4 · #D66F5E</text>
+        </g>
+      
+
+        <g transform="translate(70 770)">
+          <rect width="430" height="532" rx="34" fill="#FFFFFF" stroke="#E4DCD2"/>
+          <svg x="56" y="42" width="236" height="236" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFF9EF"/>
+          <stop offset="100%" stop-color="#F0E3CF"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A8B7B2" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="312" y="90" width="76" height="76" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFF9EF"/>
+          <stop offset="100%" stop-color="#F0E3CF"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A8B7B2" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="338" y="206" width="28" height="28" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFF9EF"/>
+          <stop offset="100%" stop-color="#F0E3CF"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#24302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#24302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A8B7B2" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <text x="56" y="342" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="750" fill="#252B2A">04 Postcard System</text>
+          <text x="56" y="383" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#68716E">The strongest bridge to Cloud Card, still icon-simple.</text>
+          <text x="56" y="438" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#A17C67">V7-06 BASE / 108 / 28 PX CHECK</text>
+          <text x="56" y="478" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#52615F">#24302D · #A8B7B2 · #D87561</text>
+        </g>
+      
+
+        <g transform="translate(556 770)">
+          <rect width="430" height="532" rx="34" fill="#FFFFFF" stroke="#E4DCD2"/>
+          <svg x="56" y="42" width="236" height="236" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FAF4EB"/>
+          <stop offset="100%" stop-color="#F2E8DA"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#26312F" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#26312F" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A6B5B0" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="312" y="90" width="76" height="76" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FAF4EB"/>
+          <stop offset="100%" stop-color="#F2E8DA"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#26312F" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#26312F" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A6B5B0" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="338" y="206" width="28" height="28" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FAF4EB"/>
+          <stop offset="100%" stop-color="#F2E8DA"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bg)"/>
+    
+<path d="M350 380H620" fill="none" stroke="#26312F" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#26312F" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A6B5B0" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <text x="56" y="342" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="750" fill="#252B2A">05 Quiet Memory</text>
+          <text x="56" y="383" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#68716E">Warmer, more private, but intentionally lower saturation.</text>
+          <text x="56" y="438" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#A17C67">V7-06 BASE / 108 / 28 PX CHECK</text>
+          <text x="56" y="478" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#52615F">#26312F · #A6B5B0 · #D87561</text>
+        </g>
+      
+
+        <g transform="translate(1042 770)">
+          <rect width="430" height="532" rx="34" fill="#FFFFFF" stroke="#E4DCD2"/>
+          <svg x="56" y="42" width="236" height="236" viewBox="0 0 1024 1024">
+
+      <rect width="1024" height="1024" rx="226" fill="#F4E7CF"/>
+    
+<path d="M350 380H620" fill="none" stroke="#25302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#25302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A4B6B1" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="312" y="90" width="76" height="76" viewBox="0 0 1024 1024">
+
+      <rect width="1024" height="1024" rx="226" fill="#F4E7CF"/>
+    
+<path d="M350 380H620" fill="none" stroke="#25302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#25302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A4B6B1" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <svg x="338" y="206" width="28" height="28" viewBox="0 0 1024 1024">
+
+      <rect width="1024" height="1024" rx="226" fill="#F4E7CF"/>
+    
+<path d="M350 380H620" fill="none" stroke="#25302D" stroke-width="72" stroke-linecap="round"/>
+<path d="M318 566C426 512 548 524 668 596" fill="none" stroke="#25302D" stroke-width="82" stroke-linecap="round"/>
+<circle cx="676" cy="596" r="38" fill="#D87561"/>
+<path d="M440 698H588" fill="none" stroke="#A4B6B1" stroke-width="46" stroke-linecap="round"/>
+</svg>
+          <text x="56" y="342" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="750" fill="#252B2A">06 Ticket Cream</text>
+          <text x="56" y="383" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#68716E">Most theme-aligned, highest risk of feeling old.</text>
+          <text x="56" y="438" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#A17C67">V7-06 BASE / 108 / 28 PX CHECK</text>
+          <text x="56" y="478" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" fill="#52615F">#25302D · #A4B6B1 · #D87561</text>
+        </g>
+      
+</svg>

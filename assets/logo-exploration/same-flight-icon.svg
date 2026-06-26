@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+      <defs>
+        <linearGradient id="bgSameFlight" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FAF8F0"/>
+          <stop offset="100%" stop-color="#EEF5F2"/>
+        </linearGradient>
+      </defs>
+      <rect width="1024" height="1024" rx="226" fill="url(#bgSameFlight)"/>
+      <path d="M226 614C344 466 572 446 754 574" fill="none" stroke="#26302E" stroke-width="64" stroke-linecap="round"/>
+      <circle cx="294" cy="556" r="42" fill="#D97360"/>
+      <circle cx="712" cy="542" r="42" fill="#D97360"/>
+      <path d="M298 694H726" fill="none" stroke="#AABAB4" stroke-width="44" stroke-linecap="round"/>
+      <path d="M368 754H604" fill="none" stroke="#D9E2DE" stroke-width="36" stroke-linecap="round"/>
+    
+</svg>

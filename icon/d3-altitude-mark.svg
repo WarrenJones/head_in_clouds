@@ -1,0 +1,24 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    D3 · Altitude Mark
+    A horizon line with a single breath-rise in the middle.
+    The peak dot = the heart's note. No airplane, no cloud, no literal anything.
+    Closest in spirit to Headspace's orange circle — one ownable mark.
+    Color: amber gold, warm not cold-tech.
+  -->
+  <rect width="1024" height="1024" rx="229" fill="#0A0F1E"/>
+
+  <!-- The altitude line — flat, then one breath, then flat again -->
+  <path d="M 192,556  L 378,556
+           C 422,556  464,374  512,362
+           C 560,374  602,556  646,556
+           L 832,556"
+        fill="none"
+        stroke="#C4A35A"
+        stroke-width="22"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- The moment — a filled circle at the peak -->
+  <circle cx="512" cy="362" r="22" fill="#C4A35A"/>
+</svg>
