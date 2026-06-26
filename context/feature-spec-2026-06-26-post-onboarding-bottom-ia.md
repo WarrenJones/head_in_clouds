@@ -1,6 +1,25 @@
 # Feature Spec: Post-onboarding Bottom IA
 **日期**：2026-06-26  
 **优先级**：P0  
+**状态**：REJECTED / SUPERSEDED  
+**替代文档**：`design/source-aligned-delta-brief-2026-06-26.md`  
+
+## PM / PMO 纠偏结论
+
+这份 spec 不进入 dev。
+
+它错误地把首页问题推进成 bottom IA / tab 结构调整，和 v2.4 原 Figma visual lock 冲突。当前正确方向是：
+
+```text
+保留原 Figma Make / v2.4 视觉语言；
+只修 01a / 01b 首页的回访疲劳、CTA 层级和按钮堆叠；
+不默认引入底部 tab，不重做产品视觉系统。
+```
+
+以下内容仅作为废弃记录保留，用于追溯错误决策来源。
+
+---
+
 **预计影响**：修复 01a/01b 首页信息架构偏离，提升 `compose_started / landing_viewed`，降低回访疲劳。
 
 ## 问题（用户视角）
