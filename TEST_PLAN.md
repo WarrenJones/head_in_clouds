@@ -3,8 +3,8 @@
 **项目**：head_in_clouds  
 **基于 PRD 版本**：v2.4 · 2026-05-20 · 表达先行 + 验证后置  
 **目标平台**：Stage 1 只按 iOS App（SwiftUI / VisionKit）验收；Web 仅作为官网、隐私协议、分享落地页的辅助承载，不是第一版产品实现路径。Stage 1 先 TestFlight，不上 App Store。
-**生成时间**：2026-05-20  
-**状态**：Phase 1 待 founder review；通过后才允许 dev 起跑。
+**生成时间**：2026-05-20；2026-06-26 追加 App Shell / DESIGN_SPEC 视觉门禁  
+**状态**：Phase 1 重新等待 founder review；通过后才允许 dev 起跑。
 
 ---
 
@@ -21,6 +21,16 @@ v2.4 的测试目标不是证明“扫描登机牌能跑”，而是证明新漏
 7. 公共区域是否完全不暴露姓名、票号、证件号、具体座位号？
 
 **旧 test-plan 中的 photo-first / 30-300 字 / post_generated / post_published 全部废弃。** 本计划以 PRD v2.4 为准。
+
+### 0.1 Design Gate Source
+
+本轮 dev 必须同时满足：
+
+- `DESIGN_SPEC.md`
+- `design/source-aligned-app-shell-ia-2026-06-26.md`
+- `design/source-aligned-shell-contact-sheet-2026-06-26.png`
+
+QA 视觉验收口径：post-onboarding 是 4 入口 App Shell，不是单页 Opening，也不是 5-tab 工具栏。
 
 ---
 
@@ -65,6 +75,7 @@ v2.4 的测试目标不是证明“扫描登机牌能跑”，而是证明新漏
 | C-5 验证后置边界感 | §3.3 / §9 08 / §10 #3 | 用户能说清“私人卡不需验证；同班机发布/评论需验证” | ≥ 8/10 正确回答；未验证发布同班机 100% 被拦 |
 | C-6 离线可靠性 | §2 / §13.2 | 无网络写作、生成本地卡、排队同步、失败重试 | 0 丢稿；`offline_sync_completed / offline_sync_started >= 95%` |
 | C-7 隐私信任 | §3.3 / §10 #20 | 公开区域和埋点不出现具体座位号、姓名、票号、证件号 | 0 泄露；任一泄露直接 NO-GO |
+| C-8 App Shell 可达性 | DESIGN_SPEC App Shell IA | 用户可从 post-onboarding 任一主 shell 进入 `今天 / 飞行册 / 写 / 发现`，且无需一路返回 | 4 个入口 100% 可达；`写` 为中心最高权重；无第 5 个 tab |
 
 **C-1 / C-2 / C-3 任一不达标 = Stage 1 验证失败，回 PM/Design，不进 dev 扩展。**  
 **C-5 / C-6 / C-7 任一失败 = NO-GO，不能用“体验问题”降级。**
@@ -146,6 +157,20 @@ v2.4 的测试目标不是证明“扫描登机牌能跑”，而是证明新漏
 | P0-36 | Guest 数据不丢 | Guest 写卡后绑定微信/手机号；卸载重装后登录 | user_id 或 merge 逻辑保留历史 Post，落 01b |
 | P0-37 | 删除账号 | 13 点删除账号 | 二次确认 + 当前登录方式校验；软删除 + 30 天恢复期文案 |
 | P0-38 | UGC 安全动作 | 任意 Post / Comment 执行举报、隐藏、屏蔽、删除自己的内容 | 12 Report < 3 步可达；动作立即生效；自己的 Post/Comment 可删除 |
+
+### 3.8 Post-onboarding App Shell / DESIGN_SPEC 视觉 IA（新增 P0）
+
+| # | 功能 | 测试步骤 | 预期结果 |
+|---|---|---|---|
+| P0-39 | 4 入口 App Shell | 完成 onboarding 后进入 post-onboarding；查看底部导航 | 只有 `今天 / 飞行册 / 写 / 发现` 4 个入口；无第 5 个 tab；`设置` 不在底部栏 |
+| P0-40 | 中心写作动作 | 从 `今天` / `飞行册` / `发现` 分别点击中心 `写` | 均进入 06 Compose；`写` 是最高视觉权重；不要求航班号、登机牌或权限 |
+| P0-41 | 主页面互通 | 在 `今天`、`飞行册`、`发现` 之间切换 | 任一主页面都能直接切到其他主页面；不得要求一路返回栈 |
+| P0-42 | Today 状态优先级 | 分别准备无内容、已有草稿、已有卡、未来提醒状态后打开 App | `今天` 按 DESIGN_SPEC 优先显示草稿/真实卡/下一趟提醒/无内容样例；有内容用户不得反复看到静态大样例作为主内容 |
+| P0-43 | Flight Book 可达 | 从任一主 shell 点击 `飞行册` | 进入 `我的飞行册`；显示用户 Cloud Card 历史；不得只能从设置或首页按钮进入 |
+| P0-44 | Discover 可达且只读边界 | 从任一主 shell 点击 `发现`，打开非同班机内容 | 进入 `别人留下的`；非同班机内容不出现评论框；显示只读边界 |
+| P0-45 | 上下文动作不进 tab | 检查底部导航和 `今天` 页面 | `添加航班`、`登机提醒` 只作为 `今天` 上下文动作出现，不作为 tab；无工具菜单式按钮堆叠 |
+| P0-46 | Compose 沉浸返回 | 从中心 `写` 进入 Compose，取消/保存草稿/生成私人卡 | Compose 可沉浸隐藏 shell；取消回 `今天`；草稿回 `今天` 展示；生成私人卡后回 `今天` 或 `飞行册` |
+| P0-47 | Source-aligned 视觉 | 真机截图对照 `source-aligned-shell-contact-sheet-2026-06-26.png` | 深蓝 dawn、纸张 Cloud Card、金色中心写作动作保留；不得做成默认 iOS tab bar 或航班工具 App |
 
 ---
 
