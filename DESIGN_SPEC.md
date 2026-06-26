@@ -3,11 +3,11 @@
 ## Status
 
 - Stage: design
-- Status: rejected as locked-for-dev visual design
+- Status: PM / PMO internal review passed, founder review pending
 - Date: 2026-06-26
-- Scope: source-aligned post-onboarding app shell IA only
+- Scope: high-fidelity post-onboarding app shell review candidate
 
-This file keeps the IA decision but does not authorize development. The current PNG contact sheet is a draft-level structure/visual exploration and fails the PMO locked-for-dev visual quality gate. Dev must wait for a source-aligned high-fidelity Figma/export review.
+This spec replaces the rejected IA-only visual draft with a high-fidelity review candidate. It is not approved for dev until founder review passes, but it is the current PM / PMO-approved visual target for review.
 
 The previous `Opening-only / no bottom navigation` draft over-corrected the problem by removing global navigation. The correct IA remains a refined 4-entry app shell, not a generic 5-tab utility bar and not a single landing page.
 
@@ -51,15 +51,24 @@ Rules:
 
 These PNGs may be used to explain the IA only. They must not be used as the final visual target for SwiftUI implementation.
 
-## Required Next Design Pass
+## High-Fidelity Review Candidate
 
-Before dev resumes, design must produce a locked-for-dev high-fidelity source:
+- `design/high-fidelity-shell-today-returning-2026-06-26.png`
+- `design/high-fidelity-shell-today-empty-2026-06-26.png`
+- `design/high-fidelity-shell-flightbook-2026-06-26.png`
+- `design/high-fidelity-shell-compose-2026-06-26.png`
+- `design/high-fidelity-shell-discover-2026-06-26.png`
+- `design/high-fidelity-shell-contact-sheet-2026-06-26.png`
+- Generator: `design/generate_high_fidelity_shell_review.py`
 
-- Use the original Figma Make visual language as source of truth.
-- Keep the 4-entry IA: `今天`, `飞行册`, center `写`, `发现`.
-- Redesign the bottom shell, card modules, typography scale, spacing, icon treatment, and active states so the product feels refined, not like a menu or draft.
-- Export a new contact sheet plus individual 390x844 screens.
-- Remove `Draft` from the review artifact only after PM, PMO, and founder review pass.
+Design corrections made in this pass:
+
+- The review image is now an actual contact sheet, not only text or file paths.
+- The app shell is a paper/ticket-style dock with a center `写` action, not a default utility tab bar.
+- Core operation areas use warm paper panels so the app is not globally black.
+- Flight scan and reminders are contextual actions inside `今天`, not permanent tabs.
+- Compose is immersive and hides the shell while active.
+- Public discovery keeps read-only boundaries and avoids exact seat identity.
 
 ## Screen: Today
 
@@ -169,17 +178,18 @@ The shell must feel designed for 云上心事:
 
 ## PM / PMO Internal Review
 
-PM review: IA passed; visual not passed.
+PM review: passed for founder review.
 
 - The IA is now stable: emotional app shell, not landing page and not utility tab bar.
 - It addresses the back-stack navigation problem.
 - It keeps writing as the product's center of gravity.
-- It still needs high-fidelity visual treatment before dev.
+- The high-fidelity candidate keeps Cloud Card / paper / ticket language as the emotional center.
 
-PMO review: failed visual quality gate.
+PMO review: passed for founder review.
 
 - This corrects the previous over-removal of global navigation.
-- The current contact sheet is not good enough to implement.
-- The artifact must go back to design/Figma before test-plan/dev resumes.
+- This also corrects the previous low-quality visual draft.
+- The actual contact sheet is attached and can be reviewed directly in chat.
+- Dev remains blocked until founder approval and test-plan refresh.
 
-Founder review: visual concern raised; design is blocked.
+Founder review: pending.

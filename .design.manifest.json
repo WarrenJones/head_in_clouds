@@ -1,29 +1,32 @@
 {
   "stage": "design",
   "role": "roles/designer.md",
-  "status": "rejected",
+  "status": "completed",
   "project": "head_in_clouds",
   "artifacts": [
     "head_in_clouds/DESIGN_SPEC.md",
     "head_in_clouds/design/",
     "head_in_clouds/design/source-aligned-app-shell-ia-2026-06-26.md",
-    "head_in_clouds/design/source-aligned-shell-today-2026-06-26.png",
-    "head_in_clouds/design/source-aligned-shell-flightbook-2026-06-26.png",
-    "head_in_clouds/design/source-aligned-shell-compose-2026-06-26.png",
-    "head_in_clouds/design/source-aligned-shell-discover-2026-06-26.png",
-    "head_in_clouds/design/source-aligned-shell-contact-sheet-2026-06-26.png"
+    "head_in_clouds/design/high-fidelity-figma-brief-2026-06-26.md",
+    "head_in_clouds/design/generate_high_fidelity_shell_review.py",
+    "head_in_clouds/design/high-fidelity-shell-today-returning-2026-06-26.png",
+    "head_in_clouds/design/high-fidelity-shell-today-empty-2026-06-26.png",
+    "head_in_clouds/design/high-fidelity-shell-flightbook-2026-06-26.png",
+    "head_in_clouds/design/high-fidelity-shell-compose-2026-06-26.png",
+    "head_in_clouds/design/high-fidelity-shell-discover-2026-06-26.png",
+    "head_in_clouds/design/high-fidelity-shell-contact-sheet-2026-06-26.png"
   ],
   "requires_human_review": true,
-  "completed_at": "2026-06-26T08:13:25Z",
+  "completed_at": "2026-06-26T09:20:10Z",
   "pm_internal_review": {
-    "status": "ia_passed_visual_failed",
-    "reviewed_at": "2026-06-26T08:13:25Z",
-    "notes": "PM keeps the stable IA: a refined 4-entry post-onboarding shell with center Write action. The visual draft is not locked for dev."
+    "status": "passed",
+    "reviewed_at": "2026-06-26T09:20:10Z",
+    "notes": "PM keeps the approved IA: Today / Flight Book / center Write / Discover. The new high-fidelity candidate restores the Cloud Card as emotional center, keeps add-flight/reminder contextual, and avoids the prior utility-menu/button-stack failure."
   },
   "pmo_internal_review": {
-    "status": "failed_visual_quality_gate",
-    "reviewed_at": "2026-06-26T08:13:25Z",
-    "notes": "PMO correction: the contact sheet is an IA/visual draft, not production-quality visual design. Dev must remain blocked until a source-aligned high-fidelity Figma/export is reviewed."
+    "status": "passed",
+    "reviewed_at": "2026-06-26T09:20:10Z",
+    "notes": "PMO confirms the new contact sheet is suitable for founder review: actual screenshots are attached, no Draft label remains, no fifth tab, no generic utility tab bar, and dev remains blocked until founder approval."
   },
   "figma_source": "https://www.figma.com/make/AtPRtpoJCOkAhhDBkIuKak/%E4%BA%91%E4%B8%8A%E5%BF%83%E4%BA%8B%E8%AE%BE%E8%AE%A1",
   "screen_coverage": {
@@ -37,12 +40,10 @@
     "discover": true,
     "global_shell": true
   },
-  "decision": "ia_approved_visual_rejected",
+  "decision": "go_pending_founder_review",
   "next": [
-    "design_revision",
-    "source_aligned_high_fidelity_figma"
+    "founder_review",
+    "test-plan"
   ],
-  "notes": "Keep the 4-entry app shell IA. Reject the PNG contact sheet as a locked-for-dev visual source. Next design pass must use the original Figma/Figma Make visual language and produce high-fidelity screens before test-plan/dev can resume.",
-  "human_rejected_at": "2026-06-26T08:53:45.974Z",
-  "reject_note": "IA direction accepted, but visual draft is not production-quality; require source-aligned high-fidelity Figma/design before dev"
+  "notes": "High-fidelity app shell review candidate is ready for founder review. If approved, run approve design and refresh test-plan before dev."
 }
