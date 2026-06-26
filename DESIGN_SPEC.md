@@ -5,9 +5,9 @@
 - Stage: design
 - Status: PM / PMO internal review passed, founder review pending
 - Date: 2026-06-26
-- Scope: source-aligned patch for 01a / 01b Opening IA
+- Scope: source-aligned post-onboarding app shell IA
 
-This spec does not replace the existing Figma Make design system. It patches the post-onboarding Opening hierarchy while preserving the v2.4 visual lock.
+This spec replaces the rejected `Opening-only / no bottom navigation` draft. The previous draft over-corrected the problem by removing global navigation. The correct solution is a refined 4-entry app shell, not a generic 5-tab utility bar and not a single landing page.
 
 ## Source Of Truth
 
@@ -16,108 +16,155 @@ This spec does not replace the existing Figma Make design system. It patches the
 - `DESIGN_BRIEF.md`
 - `FIGMA_MAKE_BRIEF.md`
 - `FIGMA_MAKE_PROMPT.md`
-- Delta brief: `design/source-aligned-delta-brief-2026-06-26.md`
+- IA decision: `design/source-aligned-app-shell-ia-2026-06-26.md`
+- Rejected prior draft: `design/source-aligned-delta-brief-2026-06-26.md`
+
+## Product IA Decision
+
+Post-onboarding must have a global app shell.
+
+Use 4 shell entries:
+
+```text
+今天        飞行册        写        发现
+Today       Archive       Write     Discover
+```
+
+Rules:
+
+- `写` is the center primary action, not an equal utility tab.
+- `今天` is the default stateful home after onboarding.
+- `飞行册` is the user's card archive.
+- `发现` is public / same-route / destination discovery.
+- Settings stays top-right.
+- Add flight and reminder stay contextual inside `今天`, not tabs.
 
 ## Visual Drafts
 
-- `design/source-aligned-opening-01a-first-published-2026-06-26.png`
-- `design/source-aligned-opening-01b-returning-2026-06-26.png`
-- `design/source-aligned-opening-contact-sheet-2026-06-26.png`
+- `design/source-aligned-shell-today-2026-06-26.png`
+- `design/source-aligned-shell-flightbook-2026-06-26.png`
+- `design/source-aligned-shell-compose-2026-06-26.png`
+- `design/source-aligned-shell-discover-2026-06-26.png`
+- `design/source-aligned-shell-contact-sheet-2026-06-26.png`
 
-## IA Decision
+## Screen: Today
 
-Do not add a bottom tab bar in this patch.
+Purpose: let the user understand what matters now and start writing quickly.
 
-The product remains an Opening-led emotional app:
+State priority:
 
-- Primary recurring action: `写下这一趟`
-- Secondary context actions: add flight, reminder, flight book, discovery
-- Settings: top-right icon
-- Same-flight space: entered from publish, notification, or verified flight context
+1. Unsaved draft recovery.
+2. Latest real Cloud Card / memory.
+3. Next flight reminder.
+4. No-content sample card.
 
-## 01a Opening · First-Published
+Required elements:
 
-Use when the user has completed onboarding but has not published any post.
-
-Required hierarchy:
-
-1. Brand title and short emotional subtitle.
-2. Large Cloud Card sample is allowed in this state.
-3. Main message: user can write first and add flight later.
-4. Primary CTA: `写下这一趟`.
-5. Secondary compact actions:
-   - `添加航班` with `扫登机牌 / 手输`
-   - `登机提醒` with `起飞前 30 分钟`
-6. Discovery remains a quiet text link, not a large CTA.
-7. Bottom privacy reassurance remains.
+- Brand header and settings icon.
+- Latest card / draft / empty-state module.
+- Primary path to write via shell center action.
+- Contextual actions:
+  - Add flight.
+  - Set reminder.
+- A quiet route to discovery when appropriate.
 
 Do not:
 
-- Make scan flight the first required step.
-- Show four same-weight full-width buttons.
-- Add bottom tab navigation.
+- Show the same static sample card every time after the user has content.
+- Stack four full-width same-weight action buttons.
 
-## 01b Opening · Returning
+## Screen: Flight Book
 
-Use when the user has at least one post.
+Purpose: let the user revisit their own Cloud Cards without going through Home buttons.
 
-Required hierarchy:
+Required elements:
 
-1. Header: `最近的云上心事`.
-2. Show the user's latest real card or draft preview, not the same static sample.
-3. Add a compact recall module with quote and metadata.
-4. Primary CTA remains `写下这一趟`.
-5. Secondary compact actions:
-   - `航班`
-   - `提醒`
-   - `飞行册`
-6. Discovery remains a quiet link.
-7. Settings remains top-right.
+- Title: `我的飞行册`.
+- Count and sync / guest status.
+- 2-column card grid or compact vertical card list.
+- Latest card first.
+- Bottom shell with `飞行册` active.
 
 Do not:
 
-- Reuse 01a static sample as the main returning-state content.
-- Make `我的飞行册` a same-weight full-width homepage button.
-- Put settings in bottom navigation.
+- Hide this behind Settings.
+- Make the user back out from Compose/Home to reach it.
 
-## Visual Acceptance Rules
+## Screen: Write / Compose
 
-P0 visual regressions:
+Purpose: make writing feel focused and ceremonial.
 
-- App no longer resembles the original Figma Make / v2.4 visual language.
-- Bottom tab is introduced without a separate founder decision.
-- `写下这一趟` is not the single highest-weight CTA.
-- Returning users still see the same large static sample card as the primary content.
-- Add flight, reminder, flight book, and discovery appear as four equal large buttons.
-- WeChat green appears outside WeChat login.
+Behavior:
 
-P1 visual checks:
+- Tapping shell `写` opens 06 Compose.
+- Compose may hide the bottom shell while active.
+- Back / cancel returns to `今天`.
+- Saved draft appears in `今天`.
 
-- Text must not clip on iPhone 390 x 844.
-- Compact action cards must not feel like a utility menu.
-- The Cloud Card must remain the visual anchor, not a generic app screenshot.
-- Dark background must remain atmospheric; card and action surfaces must keep paper / warm-light contrast.
+Required elements:
+
+- Title: `这次飞行，我只想说：`
+- One-line-first input.
+- Flight status chip.
+- Draft / offline save state.
+- Primary CTA: `生成私人明信片`.
+
+## Screen: Discover
+
+Purpose: allow browsing without competing with writing.
+
+Required elements:
+
+- Title: `别人留下的`.
+- Segments such as `同航线` / `目的地` / `此刻`.
+- Public card feed.
+- Clear read-only boundary for non-same-flight content.
+- Bottom shell with `发现` active.
+
+Do not:
+
+- Add comment composer for discovery-only content.
+- Make discovery visually louder than writing.
+
+## Bottom Shell Visual Rules
+
+The shell must feel designed for 云上心事:
+
+- Deep translucent rail, not default system tab bar.
+- Gold center `写` action.
+- Quiet labels for `今天`, `飞行册`, `发现`.
+- No fifth tab.
+- No large WeChat green or utility-dashboard styling.
+
+## P0 Acceptance Rules
+
+- A user can move between `今天`, `飞行册`, `写`, and `发现` without unwinding a back stack.
+- Returning users do not see the same large static sample card as their main content.
+- `写` remains the highest-weight action.
+- Add flight and reminder are contextual actions, not tabs.
+- Settings remains top-right.
+- The draft preserves the original Figma / v2.4 visual language.
 
 ## Implementation Notes For Dev
 
 - Current SwiftUI entry point: `ios/App/Views/WelcomeView.swift`, `OpeningView`.
-- Implementation should split first-published and returning visual states.
-- Do not implement the rejected bottom IA spec in `context/feature-spec-2026-06-26-post-onboarding-bottom-ia.md`.
-- Use the PNG drafts as layout references, not as raster assets inside the app.
+- Dev should implement a post-onboarding shell instead of a single Opening-only screen.
+- The shell controls navigation among Today, Flight Book, Compose entry, and Discover.
+- Compose / Card Studio / Publish can be immersive and hide the shell while active.
+- Use PNG drafts as layout references, not raster assets.
 
 ## PM / PMO Internal Review
 
 PM review: passed.
 
-- The draft preserves source visual language.
-- The primary action is clear.
-- It removes equal-weight button stacking.
-- It keeps verification after expression.
+- The IA is now stable: emotional app shell, not landing page and not utility tab bar.
+- It addresses the back-stack navigation problem.
+- It keeps writing as the product's center of gravity.
 
 PMO review: passed.
 
-- This is not a full redesign.
-- It does not hand off an ugly bottom-tab draft.
-- It can be shown to founder for review before dev continues.
+- This corrects the previous over-removal of global navigation.
+- It is source-aligned and preserves the original visual language.
+- It is ready for founder review before dev continues.
 
 Founder review: pending.

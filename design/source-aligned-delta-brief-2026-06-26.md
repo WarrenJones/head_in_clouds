@@ -1,5 +1,11 @@
 # Source-Aligned Delta Brief: Opening IA Patch
 
+## Status
+
+REJECTED / SUPERSEDED by `source-aligned-app-shell-ia-2026-06-26.md`.
+
+This brief correctly rejected a generic 5-tab utility bar, but it over-corrected by removing global post-onboarding navigation. It must not be used for dev.
+
 ## PM / PMO Decision
 
 We are not replacing the original Figma Make design.

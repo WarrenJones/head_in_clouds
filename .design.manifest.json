@@ -6,23 +6,24 @@
   "artifacts": [
     "head_in_clouds/DESIGN_SPEC.md",
     "head_in_clouds/design/",
-    "head_in_clouds/design/source-aligned-opening-01a-first-published-2026-06-26.png",
-    "head_in_clouds/design/source-aligned-opening-01b-returning-2026-06-26.png",
-    "head_in_clouds/design/source-aligned-opening-contact-sheet-2026-06-26.png",
-    "head_in_clouds/design/source-aligned-delta-brief-2026-06-26.md",
-    "head_in_clouds/design/rejected-2026-06-26-new-visual-exploration.md"
+    "head_in_clouds/design/source-aligned-app-shell-ia-2026-06-26.md",
+    "head_in_clouds/design/source-aligned-shell-today-2026-06-26.png",
+    "head_in_clouds/design/source-aligned-shell-flightbook-2026-06-26.png",
+    "head_in_clouds/design/source-aligned-shell-compose-2026-06-26.png",
+    "head_in_clouds/design/source-aligned-shell-discover-2026-06-26.png",
+    "head_in_clouds/design/source-aligned-shell-contact-sheet-2026-06-26.png"
   ],
   "requires_human_review": true,
-  "completed_at": "2026-06-26T07:56:40Z",
+  "completed_at": "2026-06-26T08:13:25Z",
   "pm_internal_review": {
     "status": "passed",
-    "reviewed_at": "2026-06-26T07:56:40Z",
-    "notes": "PM confirms this is a source-aligned 01a/01b patch, not a full visual redesign or rejected bottom-tab IA."
+    "reviewed_at": "2026-06-26T08:13:25Z",
+    "notes": "PM confirms the stable IA: a refined 4-entry post-onboarding shell with center Write action, not a 5-tab utility bar and not a single landing page."
   },
   "pmo_internal_review": {
     "status": "passed",
-    "reviewed_at": "2026-06-26T07:56:40Z",
-    "notes": "PMO confirms the design preserves the original Figma/v2.4 visual lock and can be shown to founder before dev continues."
+    "reviewed_at": "2026-06-26T08:13:25Z",
+    "notes": "PMO confirms this corrects the prior no-bottom-nav overcorrection and preserves the original Figma/v2.4 visual language."
   },
   "figma_source": "https://www.figma.com/make/AtPRtpoJCOkAhhDBkIuKak/%E4%BA%91%E4%B8%8A%E5%BF%83%E4%BA%8B%E8%AE%BE%E8%AE%A1",
   "screen_coverage": {
@@ -31,12 +32,15 @@
     "home_returning_with_content": true,
     "primary_creation_flow": true,
     "detail_or_result": true,
-    "settings_entry": true
+    "settings_entry": true,
+    "flight_book": true,
+    "discover": true,
+    "global_shell": true
   },
   "decision": "go_pending_founder_review",
   "next": [
     "founder_review",
     "test-plan"
   ],
-  "notes": "Source-aligned Opening IA patch is ready for founder review. Dev remains blocked until design is approved."
+  "notes": "Refined 4-entry app shell design is ready for founder review. Dev remains blocked until design is approved."
 }
