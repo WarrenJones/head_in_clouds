@@ -1,5 +1,7 @@
 # Source-Aligned App Shell IA
 
+Status: IA approved, visual draft rejected. Use this document as the structural input for the next high-fidelity Figma pass, not as a locked-for-dev visual spec.
+
 ## PM Decision
 
 The post-onboarding product must not be a one-screen landing page.

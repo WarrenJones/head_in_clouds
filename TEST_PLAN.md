@@ -4,7 +4,7 @@
 **基于 PRD 版本**：v2.4 · 2026-05-20 · 表达先行 + 验证后置  
 **目标平台**：Stage 1 只按 iOS App（SwiftUI / VisionKit）验收；Web 仅作为官网、隐私协议、分享落地页的辅助承载，不是第一版产品实现路径。Stage 1 先 TestFlight，不上 App Store。
 **生成时间**：2026-05-20；2026-06-26 追加 App Shell / DESIGN_SPEC 视觉门禁  
-**状态**：Phase 1 重新等待 founder review；通过后才允许 dev 起跑。
+**状态**：Blocked by design revision. 当前 App Shell IA 可保留，但 2026-06-26 contact sheet 未通过 locked-for-dev 视觉门禁；必须等高保真 Figma / 设计源通过后刷新本测试计划，才允许 dev 起跑。
 
 ---
 
@@ -24,13 +24,13 @@ v2.4 的测试目标不是证明“扫描登机牌能跑”，而是证明新漏
 
 ### 0.1 Design Gate Source
 
-本轮 dev 必须同时满足：
+本轮 dev 启动前必须先有新的 locked-for-dev 设计源。当前只允许保留 IA 输入：
 
 - `DESIGN_SPEC.md`
 - `design/source-aligned-app-shell-ia-2026-06-26.md`
-- `design/source-aligned-shell-contact-sheet-2026-06-26.png`
+- `design/high-fidelity-figma-brief-2026-06-26.md`
 
-QA 视觉验收口径：post-onboarding 是 4 入口 App Shell，不是单页 Opening，也不是 5-tab 工具栏。
+QA 视觉验收口径：post-onboarding 是 4 入口 App Shell，不是单页 Opening，也不是 5-tab 工具栏；但最终截图验收必须绑定后续通过 review 的高保真 Figma / contact sheet，不能绑定 2026-06-26 这张 rejected draft。
 
 ---
 

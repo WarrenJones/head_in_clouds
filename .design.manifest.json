@@ -1,7 +1,7 @@
 {
   "stage": "design",
   "role": "roles/designer.md",
-  "status": "completed",
+  "status": "rejected",
   "project": "head_in_clouds",
   "artifacts": [
     "head_in_clouds/DESIGN_SPEC.md",
@@ -16,14 +16,14 @@
   "requires_human_review": true,
   "completed_at": "2026-06-26T08:13:25Z",
   "pm_internal_review": {
-    "status": "passed",
+    "status": "ia_passed_visual_failed",
     "reviewed_at": "2026-06-26T08:13:25Z",
-    "notes": "PM confirms the stable IA: a refined 4-entry post-onboarding shell with center Write action, not a 5-tab utility bar and not a single landing page."
+    "notes": "PM keeps the stable IA: a refined 4-entry post-onboarding shell with center Write action. The visual draft is not locked for dev."
   },
   "pmo_internal_review": {
-    "status": "passed",
+    "status": "failed_visual_quality_gate",
     "reviewed_at": "2026-06-26T08:13:25Z",
-    "notes": "PMO confirms this corrects the prior no-bottom-nav overcorrection and preserves the original Figma/v2.4 visual language."
+    "notes": "PMO correction: the contact sheet is an IA/visual draft, not production-quality visual design. Dev must remain blocked until a source-aligned high-fidelity Figma/export is reviewed."
   },
   "figma_source": "https://www.figma.com/make/AtPRtpoJCOkAhhDBkIuKak/%E4%BA%91%E4%B8%8A%E5%BF%83%E4%BA%8B%E8%AE%BE%E8%AE%A1",
   "screen_coverage": {
@@ -37,11 +37,12 @@
     "discover": true,
     "global_shell": true
   },
-  "decision": "go_pending_founder_review",
+  "decision": "ia_approved_visual_rejected",
   "next": [
-    "founder_review",
-    "test-plan"
+    "design_revision",
+    "source_aligned_high_fidelity_figma"
   ],
-  "notes": "Refined 4-entry app shell design is ready for founder review. Dev remains blocked until design is approved.",
-  "human_approved_at": "2026-06-26T08:30:21.910Z"
+  "notes": "Keep the 4-entry app shell IA. Reject the PNG contact sheet as a locked-for-dev visual source. Next design pass must use the original Figma/Figma Make visual language and produce high-fidelity screens before test-plan/dev can resume.",
+  "human_rejected_at": "2026-06-26T08:53:45.974Z",
+  "reject_note": "IA direction accepted, but visual draft is not production-quality; require source-aligned high-fidelity Figma/design before dev"
 }

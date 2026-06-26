@@ -1,7 +1,7 @@
 {
   "stage": "test-plan",
   "role": "roles/test.md",
-  "status": "completed",
+  "status": "rejected",
   "project": "head_in_clouds",
   "opportunity_id": "2026-05-15-verified-flight-note",
   "prd_version": "v2.4",
@@ -10,11 +10,11 @@
   ],
   "requires_human_review": true,
   "completed_at": "2026-06-26T08:32:12Z",
-  "decision": "go",
+  "decision": "blocked_by_design_revision",
   "next": [
-    "dev"
+    "design"
   ],
-  "notes": "Updated test plan for PRD v2.4 expression-first / verification-later model plus approved 2026-06-26 App Shell DESIGN_SPEC. P0 47 / P1 20 / P2 14; 8 capability thresholds; includes source-aligned 4-entry app shell visual/IA gate. Old photo-first, 30-300 word, post_generated/post_published, no-bottom-nav, and 5-tab utility gates are superseded.",
+  "notes": "Rejected as a dev-unlocking test plan because the referenced App Shell visual draft is not locked for dev. Keep the IA and P0 shell ideas, but refresh visual QA cases after a high-fidelity source-aligned Figma/export passes design review.",
   "p0_count": 47,
   "p1_count": 20,
   "p2_count": 14,
@@ -67,5 +67,7 @@
     "Any P0 case fails",
     "Any baseline analytics event or PRD 13.3 critical event is missing",
     "Post-onboarding app lacks the approved 4-entry shell or forces users to unwind a back stack between Today / Flight Book / Write / Discover"
-  ]
+  ],
+  "human_rejected_at": "2026-06-26T08:54:20.300Z",
+  "reject_note": "Blocked by design correction: test plan must be refreshed after final high-fidelity visual source is approved"
 }
