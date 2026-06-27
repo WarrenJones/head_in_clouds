@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1240" viewBox="0 0 900 1240">
+  <rect width="900" height="1240" fill="#0b1422"/>
+  <text x="36" y="48" fill="#f1dbc0" font-family="Arial, sans-serif" font-size="24" font-weight="700">Cabin Ritual Main Flow · Visual Draft</text>
+  <text x="36" y="80" fill="#8fa0b6" font-family="Arial, sans-serif" font-size="14">Status: visual draft for founder review; not locked for dev</text>
+
+  <g transform="translate(36 118)">
+    <text x="0" y="0" fill="#f1dbc0" font-family="Arial, sans-serif" font-size="17" font-weight="700">01 Today</text>
+    <rect x="0" y="16" width="250" height="540" rx="20" fill="#111d2d"/>
+    <image href="01-today-returning.png" x="8" y="24" width="234" height="506" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <g transform="translate(325 118)">
+    <text x="0" y="0" fill="#f1dbc0" font-family="Arial, sans-serif" font-size="17" font-weight="700">02 Write</text>
+    <rect x="0" y="16" width="250" height="540" rx="20" fill="#111d2d"/>
+    <image href="02-write-compose.png" x="8" y="24" width="234" height="506" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <g transform="translate(614 118)">
+    <text x="0" y="0" fill="#f1dbc0" font-family="Arial, sans-serif" font-size="17" font-weight="700">03 Card Studio</text>
+    <rect x="0" y="16" width="250" height="540" rx="20" fill="#111d2d"/>
+    <image href="03-card-studio.png" x="8" y="24" width="234" height="506" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <g transform="translate(36 698)">
+    <text x="0" y="0" fill="#f1dbc0" font-family="Arial, sans-serif" font-size="17" font-weight="700">04 Save / Share</text>
+    <rect x="0" y="16" width="250" height="540" rx="20" fill="#111d2d"/>
+    <image href="04-save-share.png" x="8" y="24" width="234" height="506" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <g transform="translate(325 698)">
+    <text x="0" y="0" fill="#f1dbc0" font-family="Arial, sans-serif" font-size="17" font-weight="700">05 Flight Book</text>
+    <rect x="0" y="16" width="250" height="540" rx="20" fill="#111d2d"/>
+    <image href="05-flight-book.png" x="8" y="24" width="234" height="506" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <g transform="translate(614 698)">
+    <text x="0" y="0" fill="#f1dbc0" font-family="Arial, sans-serif" font-size="17" font-weight="700">06 Discover</text>
+    <rect x="0" y="16" width="250" height="540" rx="20" fill="#111d2d"/>
+    <image href="06-discover.png" x="8" y="24" width="234" height="506" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+</svg>

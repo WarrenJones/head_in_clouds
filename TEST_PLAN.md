@@ -3,8 +3,8 @@
 **项目**：head_in_clouds  
 **基于 PRD 版本**：v2.4 · 2026-05-20 · 表达先行 + 验证后置  
 **目标平台**：Stage 1 只按 iOS App（SwiftUI / VisionKit）验收；Web 仅作为官网、隐私协议、分享落地页的辅助承载，不是第一版产品实现路径。Stage 1 先 TestFlight，不上 App Store。
-**生成时间**：2026-05-20；2026-06-26 追加 App Shell / DESIGN_SPEC 视觉门禁  
-**状态**：Blocked by design revision. 当前 App Shell IA 可保留，但 2026-06-26 contact sheet 未通过 locked-for-dev 视觉门禁；必须等高保真 Figma / 设计源通过后刷新本测试计划，才允许 dev 起跑。
+**生成时间**：2026-05-20；2026-06-26 追加 App Shell / DESIGN_SPEC 视觉门禁；2026-06-27 按 founder-approved Cabin Ritual 六屏刷新
+**状态**：Test-plan refreshed after design approval. Dev 仍需等本测试计划 human review 通过后才允许起跑。
 
 ---
 
@@ -24,13 +24,21 @@ v2.4 的测试目标不是证明“扫描登机牌能跑”，而是证明新漏
 
 ### 0.1 Design Gate Source
 
-本轮 dev 启动前必须先有新的 locked-for-dev 设计源。当前只允许保留 IA 输入：
+本轮 dev 启动前必须绑定 2026-06-27 founder-approved Cabin Ritual 设计源：
 
 - `DESIGN_SPEC.md`
-- `design/source-aligned-app-shell-ia-2026-06-26.md`
-- `design/high-fidelity-figma-brief-2026-06-26.md`
+- `design/cabin-ritual-main-flow-2026-06-26.md`
+- `design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg.png`
+- `design/cabin-ritual-main-flow-2026-06-26/01-today-returning.png`
+- `design/cabin-ritual-main-flow-2026-06-26/02-write-compose.png`
+- `design/cabin-ritual-main-flow-2026-06-26/03-card-studio.png`
+- `design/cabin-ritual-main-flow-2026-06-26/04-save-share.png`
+- `design/cabin-ritual-main-flow-2026-06-26/05-flight-book.png`
+- `design/cabin-ritual-main-flow-2026-06-26/06-discover.png`
 
-QA 视觉验收口径：post-onboarding 是 4 入口 App Shell，不是单页 Opening，也不是 5-tab 工具栏；但最终截图验收必须绑定后续通过 review 的高保真 Figma / contact sheet，不能绑定 2026-06-26 这张 rejected draft。
+QA 视觉验收口径：post-onboarding 是 4 入口 App Shell，不是单页 Opening，也不是 5-tab 工具栏；最终截图验收必须绑定 Cabin Ritual 六屏设计源，不能绑定 2026-06-26 的 rejected source-aligned / high-fidelity shell draft。
+
+`DESIGN_SPEC.md` 明确排除的全量 Settings、Flight Verification detail、Report/Block、Shared Card Landing 不允许 dev 自行发明视觉。若本轮 dev 需要改动这些页面，必须走 focused design addendum；否则只能保留既有实现并按 PRD 做功能/隐私验收。
 
 ---
 
@@ -170,7 +178,8 @@ QA 视觉验收口径：post-onboarding 是 4 入口 App Shell，不是单页 Op
 | P0-44 | Discover 可达且只读边界 | 从任一主 shell 点击 `发现`，打开非同班机内容 | 进入 `别人留下的`；非同班机内容不出现评论框；显示只读边界 |
 | P0-45 | 上下文动作不进 tab | 检查底部导航和 `今天` 页面 | `添加航班`、`登机提醒` 只作为 `今天` 上下文动作出现，不作为 tab；无工具菜单式按钮堆叠 |
 | P0-46 | Compose 沉浸返回 | 从中心 `写` 进入 Compose，取消/保存草稿/生成私人卡 | Compose 可沉浸隐藏 shell；取消回 `今天`；草稿回 `今天` 展示；生成私人卡后回 `今天` 或 `飞行册` |
-| P0-47 | Source-aligned 视觉 | 真机截图对照 `source-aligned-shell-contact-sheet-2026-06-26.png` | 深蓝 dawn、纸张 Cloud Card、金色中心写作动作保留；不得做成默认 iOS tab bar 或航班工具 App |
+| P0-47 | Cabin Ritual 视觉一致性 | 真机截图对照 `design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg.png` 及 6 张独立源图 | 深蓝 cabin ritual、纸张 Cloud Card、金色中心写作动作、中文情绪标题保留；不得做成默认 iOS tab bar、航班工具 App 或按钮菜单 |
+| P0-48 | 未锁定页面不得由 dev 发明 | 检查全量 Settings、Flight Verification detail、Report/Block、Shared Card Landing 等 `DESIGN_SPEC.md` excluded surfaces | 若本轮需要改动这些页面，必须有 focused design addendum；否则只能保留既有实现并满足功能/隐私，不得新增自造视觉、入口或按钮栈 |
 
 ---
 

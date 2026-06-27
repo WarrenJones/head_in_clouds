@@ -3,193 +3,277 @@
 ## Status
 
 - Stage: design
-- Status: rejected
-- Date: 2026-06-26
-- Scope: rejected post-onboarding app shell visual attempts
+- Status: completed
+- Date: 2026-06-27
+- Scope: post-onboarding main-flow UI source
+- Approved direction: C / Cabin Ritual
+- Founder review: passed on 2026-06-27
 
-Founder review rejected the high-fidelity review candidate as visually unacceptable. PM / PMO must not treat this as a usable product direction. Dev remains blocked.
+This spec replaces the rejected 2026-06-26 shell drafts. The approved source is the Cabin Ritual six-screen package:
 
-The previous `Opening-only / no bottom navigation` draft over-corrected the problem by removing global navigation. The correct IA remains a refined 4-entry app shell, not a generic 5-tab utility bar and not a single landing page.
+- Contact sheet: `design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg.png`
+- Source SVG: `design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg`
+- Today: `design/cabin-ritual-main-flow-2026-06-26/01-today-returning.png`
+- Write / Compose: `design/cabin-ritual-main-flow-2026-06-26/02-write-compose.png`
+- Card Studio: `design/cabin-ritual-main-flow-2026-06-26/03-card-studio.png`
+- Save / Share: `design/cabin-ritual-main-flow-2026-06-26/04-save-share.png`
+- Flight Book: `design/cabin-ritual-main-flow-2026-06-26/05-flight-book.png`
+- Discover: `design/cabin-ritual-main-flow-2026-06-26/06-discover.png`
+- Review package: `design/cabin-ritual-main-flow-2026-06-26.md`
 
 ## Source Of Truth
 
-- Figma Make: https://www.figma.com/make/AtPRtpoJCOkAhhDBkIuKak/%E4%BA%91%E4%B8%8A%E5%BF%83%E4%BA%8B%E8%AE%BE%E8%AE%A1
-- `PRD.md` v2.4
-- `DESIGN_BRIEF.md`
-- `FIGMA_MAKE_BRIEF.md`
-- `FIGMA_MAKE_PROMPT.md`
-- IA decision: `design/source-aligned-app-shell-ia-2026-06-26.md`
-- Rejected prior draft: `design/source-aligned-delta-brief-2026-06-26.md`
+- PRD: `PRD.md` v2.4
+- Design brief: `DESIGN_BRIEF.md`
+- Approved visual source: `design/cabin-ritual-main-flow-2026-06-26/`
+- Rejected evidence only:
+  - `design/source-aligned-*`
+  - `design/high-fidelity-shell-*`
+  - `design/rejected-2026-06-26-new-visual-exploration.md`
 
-## Product IA Decision
+Do not use rejected images as implementation targets.
 
-Post-onboarding must have a global app shell.
+## Product IA
 
-Use 4 shell entries:
+Post-onboarding uses a refined four-entry app shell:
 
 ```text
 今天        飞行册        写        发现
-Today       Archive       Write     Discover
+Today       Flight Book   Write     Discover
 ```
 
 Rules:
 
 - `写` is the center primary action, not an equal utility tab.
-- `今天` is the default stateful home after onboarding.
-- `飞行册` is the user's card archive.
-- `发现` is public / same-route / destination discovery.
-- Settings stays top-right.
-- Add flight and reminder stay contextual inside `今天`, not tabs.
+- `今天` is the default returning state.
+- `飞行册` is the user's private keepsake archive.
+- `发现` is public / same-route / destination reading.
+- Settings/account stays top-right.
+- Add flight and boarding reminder are contextual actions, not tabs.
+- Compose / Card Studio / Save Share may hide the bottom shell while active.
 
-## IA Drafts Not Approved For Dev
+## Screen Specs
 
-- `design/source-aligned-shell-today-2026-06-26.png`
-- `design/source-aligned-shell-flightbook-2026-06-26.png`
-- `design/source-aligned-shell-compose-2026-06-26.png`
-- `design/source-aligned-shell-discover-2026-06-26.png`
-- `design/source-aligned-shell-contact-sheet-2026-06-26.png`
+### 01 Today Returning
 
-These PNGs may be used to explain the IA only. They must not be used as the final visual target for SwiftUI implementation.
+Source: `01-today-returning.png`
 
-## Rejected High-Fidelity Candidate
+Purpose: let a returning user start writing without seeing the same static sample card every time.
 
-- `design/high-fidelity-shell-today-returning-2026-06-26.png`
-- `design/high-fidelity-shell-today-empty-2026-06-26.png`
-- `design/high-fidelity-shell-flightbook-2026-06-26.png`
-- `design/high-fidelity-shell-compose-2026-06-26.png`
-- `design/high-fidelity-shell-discover-2026-06-26.png`
-- `design/high-fidelity-shell-contact-sheet-2026-06-26.png`
-- Generator: `design/generate_high_fidelity_shell_review.py`
+Must include:
 
-Do not use these images as implementation targets. They remain in the repo only as rejected evidence.
-
-Why this pass failed:
-
-- Visual quality still does not reach a polished emotional product bar.
-- The screens still feel generated and internally designed, not like an app with real art direction.
-- PM / PMO over-indexed on "not a utility menu" and missed the higher bar: this needs to feel desirable, memorable, and refined.
-- The next pass should not be another quick scripted redraw. It needs a stronger external-grade Figma / visual direction first.
-
-## Screen: Today
-
-Purpose: let the user understand what matters now and start writing quickly.
-
-State priority:
-
-1. Unsaved draft recovery.
-2. Latest real Cloud Card / memory.
-3. Next flight reminder.
-4. No-content sample card.
-
-Required elements:
-
-- Brand header and settings icon.
-- Latest card / draft / empty-state module.
-- Primary path to write via shell center action.
-- Contextual actions:
-  - Add flight.
-  - Set reminder.
-- A quiet route to discovery when appropriate.
+- Brand header: `云上心事 / Head in the Clouds`.
+- Settings/account entry in the top-right.
+- Main headline: `今天这趟，先留一句话。`
+- Warm paper note module with one-sentence prompt.
+- Primary CTA: `写下这一句`.
+- Contextual secondary actions:
+  - `添加航班号`
+  - `登机前提醒`
+- Bottom shell with `今天` active and center `写`.
 
 Do not:
 
-- Show the same static sample card every time after the user has content.
-- Stack four full-width same-weight action buttons.
+- Stack four full-width feature buttons.
+- Make scan/add-flight the first task.
+- Reuse the old large static sample card as the returning user's main content.
 
-## Screen: Flight Book
+### 02 Write / Compose
 
-Purpose: let the user revisit their own Cloud Cards without going through Home buttons.
+Source: `02-write-compose.png`
 
-Required elements:
+Purpose: make one-sentence writing immediate and ceremonial.
+
+Must include:
+
+- Back/cancel affordance.
+- Title: `写这一趟`.
+- Draft status: `已保存`.
+- Prompt: `这次飞行，我只想说：`
+- Large warm paper text area.
+- Placeholder: `比如：我把没有说出口的话，带过了云层。`
+- Flight status chip: `未添加航班 · 稍后补`.
+- Offline reassurance: `离线也会保存在本机`.
+- Optional inspiration chips.
+- Primary CTA: `生成私人明信片`.
+- Secondary action: `添加航班，解锁同班机`.
+
+Do not:
+
+- Require flight verification before writing.
+- Show a bottom tab bar while the user is composing.
+- Treat short text as incomplete.
+
+### 03 Card Studio
+
+Source: `03-card-studio.png`
+
+Purpose: turn the sentence into the emotional payoff.
+
+Must include:
+
+- Title: `云上心事卡`.
+- Status: `私人卡 · 未发布`.
+- Large Cloud Card hero.
+- Default template: `票根明信片`.
+- Secondary templates:
+  - `航线诗笺`
+  - `飞行日志`
+- Note: `未验证也可以先保存私人卡`.
+- Primary CTA: `保存 / 分享私人卡`.
+- Secondary action: `验证航班并发布到同班机`.
+
+Do not:
+
+- Make the card look like a screenshot of the app.
+- Add generic editor toolbars.
+- Put verification above private-card generation.
+
+### 04 Save / Share
+
+Source: `04-save-share.png`
+
+Purpose: close the private-card loop.
+
+Must include:
+
+- Title: `保存与分享`.
+- Subtitle: `私人卡不会进入同班机`.
+- Cloud Card preview.
+- Primary actions:
+  - `保存到相册`
+  - `发给微信朋友`
+  - `分享到朋友圈`
+- Secondary section:
+  - `想让同班机的人看到？`
+  - `验证航班后，同班机的人才能看到和留言。`
+  - CTA: `验证航班并发布`
+- Privacy note: `不会公开登机牌原图和具体座位号`.
+- Completion action: `完成`.
+
+Do not:
+
+- Use App Store download CTA.
+- Use WeChat green as global brand color.
+- Treat same-flight publishing as equal to private share before verification.
+
+### 05 Flight Book
+
+Source: `05-flight-book.png`
+
+Purpose: give returning users a private keepsake archive.
+
+Must include:
 
 - Title: `我的飞行册`.
-- Count and sync / guest status.
-- 2-column card grid or compact vertical card list.
-- Latest card first.
+- Count/status copy, for example `已留下 7 趟飞行`.
+- Short emotional subcopy.
+- Card grid or refined vertical card stack.
+- Each card shows:
+  - quote
+  - route/date or confirmation state
+  - status tag such as `私人卡` / `同班机`
+- Optional sync state such as `落地后已同步`.
 - Bottom shell with `飞行册` active.
 
 Do not:
 
-- Hide this behind Settings.
-- Make the user back out from Compose/Home to reach it.
+- Hide the archive behind Settings.
+- Use a generic table/list.
+- Make users back out through Today or Compose to reach their cards.
 
-## Screen: Write / Compose
+### 06 Discover
 
-Purpose: make writing feel focused and ceremonial.
+Source: `06-discover.png`
 
-Behavior:
+Purpose: support quiet reading without turning the product into a social feed.
 
-- Tapping shell `写` opens 06 Compose.
-- Compose may hide the bottom shell while active.
-- Back / cancel returns to `今天`.
-- Saved draft appears in `今天`.
-
-Required elements:
-
-- Title: `这次飞行，我只想说：`
-- One-line-first input.
-- Flight status chip.
-- Draft / offline save state.
-- Primary CTA: `生成私人明信片`.
-
-## Screen: Discover
-
-Purpose: allow browsing without competing with writing.
-
-Required elements:
+Must include:
 
 - Title: `别人留下的`.
-- Segments such as `同航线` / `目的地` / `此刻`.
-- Public card feed.
-- Clear read-only boundary for non-same-flight content.
+- Subtitle: `同一段云层里，有人也写下了心事。`
+- Segments:
+  - `同航线`
+  - `目的地`
+  - `此刻`
+- 3+ note/card rows.
+- Anonymous identity only:
+  - `靠窗的人`
+  - `同机乘客`
+  - `通道旁的人`
+- Boundary copy: `未验证同班机时，只能阅读，不能留言。`
+- CTA: `添加航班，解锁同班机留言`.
 - Bottom shell with `发现` active.
 
 Do not:
 
-- Add comment composer for discovery-only content.
-- Make discovery visually louder than writing.
+- Show exact seat numbers.
+- Add comment composer in discovery-only state.
+- Add like counts or social-noise affordances.
 
-## Bottom Shell Visual Rules
+## Visual Rules
 
-The shell must feel designed for 云上心事:
+- Base mood: cabin ritual, dawn-blue atmosphere, soft cabin/window light.
+- Core surfaces: warm ticket paper and paper-note texture.
+- Accent: restrained cabin gold.
+- Typography: refined Chinese serif for emotional headlines; compact metadata for flight details.
+- Keep controls sparse; no utility dashboard density.
+- Use WeChat green only for WeChat-specific share/login affordances.
+- Avoid purple SaaS gradients, crude bottom tabs, giant button stacks, and generic card grids.
 
-- Deep translucent rail, not default system tab bar.
-- Gold center `写` action.
-- Quiet labels for `今天`, `飞行册`, `发现`.
-- No fifth tab.
-- No large WeChat green or utility-dashboard styling.
+## Approved Dev Scope
+
+Dev may implement:
+
+- Post-onboarding app shell.
+- Today returning state.
+- Compose screen.
+- Card Studio result screen.
+- Save / Share screen.
+- Flight Book screen.
+- Discover screen.
+- Navigation among `今天 / 飞行册 / 写 / 发现`.
+
+Dev must not invent:
+
+- Full Account & Settings screen beyond the top-right entry.
+- Flight verification detail flow beyond the CTA entry.
+- Report/block screens.
+- Shared-card landing page.
+
+If those surfaces are required during implementation, they must use minimal system-safe fallback or return to design for a focused addendum.
 
 ## P0 Acceptance Rules
 
-- A user can move between `今天`, `飞行册`, `写`, and `发现` without unwinding a back stack.
-- Returning users do not see the same large static sample card as their main content.
-- `写` remains the highest-weight action.
-- Add flight and reminder are contextual actions, not tabs.
-- Settings remains top-right.
-- The draft preserves the original Figma / v2.4 visual language.
+- A user can move among `今天`, `飞行册`, `写`, and `发现` without unwinding a back stack.
+- `写` is visually the highest-weight action.
+- Writing and private Cloud Card generation are not blocked by flight verification.
+- Returning users do not see the same repeated static sample card as the primary home experience.
+- Private-card save/share is the primary completion path.
+- Same-flight publish/comment remains verification-gated.
+- Public surfaces never expose exact seat, name, ticket number, ID/passport, phone, or raw proof content.
+- The implemented UI must visually match the approved Cabin Ritual package, not the rejected shell drafts.
 
-## Implementation Notes For Dev
+## Follow-Up Design Addenda
 
-- Current SwiftUI entry point: `ios/App/Views/WelcomeView.swift`, `OpeningView`.
-- Dev should implement a post-onboarding shell instead of a single Opening-only screen.
-- The shell controls navigation among Today, Flight Book, Compose entry, and Discover.
-- Compose / Card Studio / Publish can be immersive and hide the shell while active.
-- Use PNG drafts as layout references, not raster assets.
+These are not blockers for the approved post-onboarding main-flow dev scope, but they are blockers before external launch review:
+
+- Account & Settings full screen.
+- Flight verification detail flow.
+- Report/block flow.
+- Shared-card landing page.
+- Home returning empty state, if implementation cannot derive it cleanly from Today.
 
 ## PM / PMO Internal Review
 
-PM review: failed after founder review.
+PM review: passed for the post-onboarding main-flow scope.
 
-- The IA is now stable: emotional app shell, not landing page and not utility tab bar.
-- It addresses the back-stack navigation problem.
-- It keeps writing as the product's center of gravity.
-- The visual design still fails product taste and must not proceed.
+- The approved six screens cover the core private-card path.
+- The visual direction supports the product's emotional value better than the rejected utility-menu drafts.
+- The scope is narrow enough for dev while still closing the main loop.
 
-PMO review: failed.
+PMO review: passed for design gate, with follow-up boundaries.
 
-- This corrects the previous over-removal of global navigation.
-- This did not correct the larger quality problem.
-- PMO should not mark a generated contact sheet as acceptable unless it is clearly good enough to show real users.
-- Dev remains blocked.
-
-Founder review: rejected.
+- Founder approved the six visual screens on 2026-06-27.
+- Test plan must be refreshed before dev.
+- Dev remains blocked until `test-plan` is completed and approved.

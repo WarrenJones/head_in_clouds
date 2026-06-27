@@ -1,21 +1,23 @@
 {
   "stage": "test-plan",
   "role": "roles/test.md",
-  "status": "rejected",
+  "status": "completed",
   "project": "head_in_clouds",
   "opportunity_id": "2026-05-15-verified-flight-note",
   "prd_version": "v2.4",
+  "design_source": "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg.png",
   "artifacts": [
     "head_in_clouds/TEST_PLAN.md"
   ],
   "requires_human_review": true,
-  "completed_at": "2026-06-26T08:32:12Z",
-  "decision": "blocked_by_design_revision",
+  "completed_at": "2026-06-27T13:20:25Z",
+  "decision": "ready_for_human_review",
   "next": [
-    "design"
+    "approve test-plan",
+    "dev"
   ],
-  "notes": "Rejected as a dev-unlocking test plan because the referenced App Shell visual draft is not locked for dev. Keep the IA and P0 shell ideas, but refresh visual QA cases after a high-fidelity source-aligned Figma/export passes design review.",
-  "p0_count": 47,
+  "notes": "Test plan refreshed against the founder-approved Cabin Ritual six-screen design source. Dev remains blocked until this QA gate is human-approved.",
+  "p0_count": 48,
   "p1_count": 20,
   "p2_count": 14,
   "boundary_case_count": 14,
@@ -45,17 +47,11 @@
     "same_flight_note_notification_opened / same_flight_note_notification_sent >= 18%"
   ],
   "supersedes": {
-    "previous_plan_version": "2026-05-16 photo-first plan",
-    "removed_gates": [
-      "capture_started / landing_viewed as primary activation gate",
-      "30-300 word requirement",
-      "post_generated / post_published funnel naming",
-      "flight proof required before compose"
-    ],
+    "previous_plan_version": "2026-06-26 blocked-by-design plan",
     "removed_design_gates": [
-      "no bottom navigation",
-      "five-tab utility bar",
-      "single Opening-only post-onboarding landing page"
+      "rejected source-aligned shell contact sheet",
+      "rejected high-fidelity shell contact sheet",
+      "any design source not based on founder-approved Cabin Ritual six-screen package"
     ]
   },
   "hard_no_go_conditions": [
@@ -66,8 +62,7 @@
     "Cloud Card includes App Store badge or hard download CTA",
     "Any P0 case fails",
     "Any baseline analytics event or PRD 13.3 critical event is missing",
-    "Post-onboarding app lacks the approved 4-entry shell or forces users to unwind a back stack between Today / Flight Book / Write / Discover"
-  ],
-  "human_rejected_at": "2026-06-26T08:54:20.300Z",
-  "reject_note": "Blocked by design correction: test plan must be refreshed after final high-fidelity visual source is approved"
+    "Post-onboarding app lacks the approved 4-entry shell or forces users to unwind a back stack between Today / Flight Book / Write / Discover",
+    "Dev invents excluded screens or visual surfaces without a focused design addendum"
+  ]
 }

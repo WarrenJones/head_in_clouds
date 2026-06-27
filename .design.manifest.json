@@ -1,34 +1,40 @@
 {
   "stage": "design",
   "role": "roles/designer.md",
-  "status": "rejected",
+  "status": "completed",
   "project": "head_in_clouds",
   "artifacts": [
     "head_in_clouds/DESIGN_SPEC.md",
     "head_in_clouds/design/",
-    "head_in_clouds/design/source-aligned-app-shell-ia-2026-06-26.md",
-    "head_in_clouds/design/high-fidelity-figma-brief-2026-06-26.md",
-    "head_in_clouds/design/generate_high_fidelity_shell_review.py",
-    "head_in_clouds/design/high-fidelity-shell-today-returning-2026-06-26.png",
-    "head_in_clouds/design/high-fidelity-shell-today-empty-2026-06-26.png",
-    "head_in_clouds/design/high-fidelity-shell-flightbook-2026-06-26.png",
-    "head_in_clouds/design/high-fidelity-shell-compose-2026-06-26.png",
-    "head_in_clouds/design/high-fidelity-shell-discover-2026-06-26.png",
-    "head_in_clouds/design/high-fidelity-shell-contact-sheet-2026-06-26.png"
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26.md",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg.png",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/01-today-returning.png",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/02-write-compose.png",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/03-card-studio.png",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/04-save-share.png",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/05-flight-book.png",
+    "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/06-discover.png"
   ],
   "requires_human_review": true,
-  "completed_at": "2026-06-26T09:20:10Z",
+  "completed_at": "2026-06-27T12:56:03Z",
   "pm_internal_review": {
-    "status": "failed_product_taste_gate",
-    "reviewed_at": "2026-06-26T09:20:10Z",
-    "notes": "PM correction after founder review: the IA can be retained, but all high-fidelity candidate screens fail product taste and cannot be treated as a viable product direction."
+    "status": "passed",
+    "reviewed_at": "2026-06-27T12:56:03Z",
+    "notes": "PM confirms the founder-approved Cabin Ritual six-screen package closes the post-onboarding private-card loop and should replace the rejected utility-menu drafts as the main-flow visual source."
   },
   "pmo_internal_review": {
-    "status": "failed_visual_quality_gate",
-    "reviewed_at": "2026-06-26T09:20:10Z",
-    "notes": "PMO correction: this pass still looks visually unacceptable and must not unlock test-plan/dev. PMO should not mark it as suitable for founder review again without a stronger external-grade design source."
+    "status": "passed",
+    "reviewed_at": "2026-06-27T12:56:03Z",
+    "notes": "PMO confirms the design package is suitable to unlock test-plan refresh for the approved post-onboarding main-flow scope. Dev remains blocked until test-plan is refreshed and approved."
+  },
+  "founder_review": {
+    "status": "passed",
+    "reviewed_at": "2026-06-27T12:56:03Z",
+    "notes": "Founder approved the six generated Cabin Ritual visual screens in chat: '这几个图我过了'."
   },
   "figma_source": "https://www.figma.com/make/AtPRtpoJCOkAhhDBkIuKak/%E4%BA%91%E4%B8%8A%E5%BF%83%E4%BA%8B%E8%AE%BE%E8%AE%A1",
+  "visual_source": "head_in_clouds/design/cabin-ritual-main-flow-2026-06-26/contact-sheet.svg.png",
   "screen_coverage": {
     "home_first_run": true,
     "home_returning_empty": true,
@@ -40,12 +46,25 @@
     "discover": true,
     "global_shell": true
   },
-  "decision": "rejected_visual_quality",
-  "next": [
-    "design_reset",
-    "external_grade_visual_direction"
+  "approved_dev_scope": [
+    "post-onboarding app shell",
+    "today returning state",
+    "write compose",
+    "card studio",
+    "save and share",
+    "flight book",
+    "discover"
   ],
-  "notes": "Founder rejected the high-fidelity shell candidate as visually unacceptable. Keep only the broad IA intent; do not use any current generated screens as implementation target.",
-  "human_rejected_at": "2026-06-26T09:27:24.703Z",
-  "reject_note": "Founder rejected high-fidelity shell candidate: all screens still fail product taste and visual quality; PM/PMO gate must not treat this as acceptable"
+  "excluded_from_this_lock": [
+    "full account and settings screen",
+    "flight verification detail flow",
+    "report and block flow",
+    "shared-card landing page"
+  ],
+  "decision": "go",
+  "next": [
+    "test-plan"
+  ],
+  "notes": "Founder-approved Cabin Ritual six-screen visual source is now the design target for the post-onboarding main flow. Refresh TEST_PLAN before dev; do not let dev invent excluded surfaces.",
+  "human_approved_at": "2026-06-27T12:59:22.740Z"
 }
