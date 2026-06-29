@@ -1402,7 +1402,7 @@ private struct FlightLogCard: View {
     }
 }
 
-private struct FlightRecordCard: View {
+struct FlightRecordCard: View {
     let record: FlightRecordViewModel
 
     var body: some View {

@@ -74,7 +74,7 @@ final class HeadInCloudsUITests: XCTestCase {
         weChat.terminate()
 
         completeOnboardingToOpening()
-        app.buttons["opening.settings"].tap()
+        app.buttons["shell.settings"].tap()
         XCTAssertTrue(app.staticTexts["账号设置"].waitForExistence(timeout: 5))
         app.buttons["保存我的账号"].tap()
         XCTAssertTrue(app.staticTexts["保存你的飞行"].waitForExistence(timeout: 5))
@@ -262,7 +262,7 @@ final class HeadInCloudsUITests: XCTestCase {
     func testComposeKeyboardDismissAndInputModeTabsWork() throws {
         completeOnboardingToOpening()
 
-        app.buttons["opening.write"].tap()
+        app.buttons["shell.write"].tap()
         let editor = app.textViews["compose.text"]
         XCTAssertTrue(editor.waitForExistence(timeout: 5))
         editor.tap()
@@ -280,27 +280,37 @@ final class HeadInCloudsUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["点按开始录音转文字"].waitForExistence(timeout: 5))
     }
 
-    func testDiscoveryTabsChangeStateAndEmptyCopy() throws {
+    func testAppShellFourEntriesAndDirectSwitching() throws {
         completeOnboardingToOpening()
 
-        app.buttons["看看别人留下的"].tap()
-        XCTAssertTrue(app.staticTexts["发现"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["还没有真实同旅程内容"].exists)
+        XCTAssertTrue(app.buttons["shell.today"].exists)
+        XCTAssertTrue(app.buttons["shell.flight_book"].exists)
+        XCTAssertTrue(app.buttons["shell.write"].exists)
+        XCTAssertTrue(app.buttons["shell.discover"].exists)
+        XCTAssertFalse(app.buttons["添加登机提醒"].exists)
 
-        app.buttons["discovery.tab.destination"].tap()
-        XCTAssertTrue(app.staticTexts["还没有同目的地笔记"].waitForExistence(timeout: 5))
+        app.buttons["shell.flight_book"].tap()
+        XCTAssertTrue(app.staticTexts["我的飞行册"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["shell.today"].exists)
 
-        app.buttons["discovery.tab.trending"].tap()
-        XCTAssertTrue(app.staticTexts["热点还没开始"].waitForExistence(timeout: 5))
+        app.buttons["shell.discover"].tap()
+        XCTAssertTrue(app.staticTexts["别人留下的"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["未验证同班机时，只能阅读，不能留言。"].exists)
 
-        app.buttons["discovery.tab.random"].tap()
-        XCTAssertTrue(app.staticTexts["随机漫游还没有内容"].waitForExistence(timeout: 5))
+        app.buttons["discover.segment.destination"].tap()
+        XCTAssertTrue(app.buttons["discover.segment.destination"].waitForExistence(timeout: 5))
+
+        app.buttons["shell.today"].tap()
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 5))
+
+        app.buttons["shell.write"].tap()
+        XCTAssertTrue(app.textViews["compose.text"].waitForExistence(timeout: 5))
     }
 
-    func testOpeningEntryPagesCanReturnAndSettingsRowsShowFeedback() throws {
+    func testShellContextPagesCanReturnAndSettingsRowsShowFeedback() throws {
         completeOnboardingToOpening()
 
-        app.buttons["opening.settings"].tap()
+        app.buttons["shell.settings"].tap()
         XCTAssertTrue(app.staticTexts["账号设置"].waitForExistence(timeout: 5))
         scrollToHittable(app.buttons["settings.clear_draft"])
         app.buttons["settings.clear_draft"].tap()
@@ -308,45 +318,47 @@ final class HeadInCloudsUITests: XCTestCase {
         app.buttons["settings.comments_count"].tap()
         XCTAssertTrue(waitForFeedback("评论统计会在服务端账号同步后更新"))
         tapBack()
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 5))
 
-        app.buttons["添加航班号 / 扫登机牌"].tap()
+        app.buttons["today.add_flight"].tap()
         XCTAssertTrue(app.staticTexts["航班信息"].waitForExistence(timeout: 5))
         tapBack()
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 5))
 
-        app.buttons["添加登机提醒"].tap()
+        app.buttons["today.reminder"].tap()
         XCTAssertTrue(app.buttons["保存登机提醒"].waitForExistence(timeout: 5))
         tapBack()
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 5))
 
-        app.buttons.containing(NSPredicate(format: "label CONTAINS %@", "我的飞行册")).firstMatch.tap()
+        app.buttons["shell.flight_book"].tap()
         XCTAssertTrue(app.staticTexts["我的飞行册"].waitForExistence(timeout: 5))
-        tapBack()
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 5))
+        app.buttons["shell.today"].tap()
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 5))
     }
 
-    func testCompletedOnboardingRelaunchesToReturningOpeningWithoutReset() throws {
+    func testCompletedOnboardingRelaunchesToTodayShellWithoutReset() throws {
         completeOnboardingToOpening()
 
         app.terminate()
         app.launchArguments = []
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 8))
-        XCTAssertFalse(app.staticTexts["登机前 30 分钟，给这趟飞行留一句话"].exists)
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.buttons["shell.write"].waitForExistence(timeout: 5))
     }
 
-    func testPublishedPostRelaunchesToReturningOpeningWithoutReset() throws {
+    func testPublishedPostRelaunchesToTodayShellWithoutReset() throws {
         createPrivateCard(text: "Returning users should land on opening after relaunch.")
 
         app.terminate()
         app.launchArguments = []
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 8))
-        XCTAssertFalse(app.staticTexts["登机前 30 分钟，给这趟飞行留一句话"].exists)
-        XCTAssertTrue(app.buttons.containing(NSPredicate(format: "label CONTAINS %@", "我的飞行册 1")).firstMatch.exists)
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.staticTexts["最近留下"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["shell.flight_book"].waitForExistence(timeout: 5))
+        app.buttons["shell.flight_book"].tap()
+        XCTAssertTrue(app.staticTexts["我的飞行册"].waitForExistence(timeout: 5))
     }
 
     func testCardStudioQuoteEditorKeyboardDismissAndPublishBackLoop() throws {
@@ -385,8 +397,8 @@ final class HeadInCloudsUITests: XCTestCase {
         app.launchArguments = []
         app.launch()
 
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 8))
-        XCTAssertFalse(app.staticTexts["登机前 30 分钟，给这趟飞行留一句话"].exists)
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.buttons["shell.flight_book"].waitForExistence(timeout: 5))
         XCTAssertFalse(app.staticTexts["MU5301"].exists)
         XCTAssertFalse(app.staticTexts["I am landing with one thing left unsaid."].exists)
     }
@@ -420,7 +432,7 @@ final class HeadInCloudsUITests: XCTestCase {
     func testFlightReminderDoesNotPrefillFakeFlightAndCanDismissKeyboard() throws {
         completeOnboardingToOpening()
 
-        app.buttons["添加登机提醒"].tap()
+        app.buttons["today.reminder"].tap()
         XCTAssertTrue(app.buttons["保存登机提醒"].waitForExistence(timeout: 5))
 
         let flightNumberField = app.textFields["reminder.flight_number"]
@@ -450,7 +462,7 @@ final class HeadInCloudsUITests: XCTestCase {
 
         completeOnboardingToOpening()
 
-        app.buttons["添加登机提醒"].tap()
+        app.buttons["today.reminder"].tap()
         XCTAssertTrue(app.buttons["保存登机提醒"].waitForExistence(timeout: 5))
         let reminderFlightNumberField = app.textFields["reminder.flight_number"]
         XCTAssertTrue(reminderFlightNumberField.waitForExistence(timeout: 5))
@@ -486,7 +498,7 @@ final class HeadInCloudsUITests: XCTestCase {
 
         completeOnboardingToOpening()
 
-        app.buttons["添加登机提醒"].tap()
+        app.buttons["today.reminder"].tap()
         XCTAssertTrue(app.buttons["保存登机提醒"].waitForExistence(timeout: 5))
         let reminderFlightNumberField = app.textFields["reminder.flight_number"]
         XCTAssertTrue(reminderFlightNumberField.waitForExistence(timeout: 5))
@@ -497,7 +509,7 @@ final class HeadInCloudsUITests: XCTestCase {
         assertFieldDoesNotContainFlightFixtures(reminderRouteField)
 
         tapBack()
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 5))
 
         createPrivateCardFromOpening(text: "I should not inherit the old flight in the form.")
         app.buttons["验证航班并发布到同班机"].tap()
@@ -526,7 +538,7 @@ final class HeadInCloudsUITests: XCTestCase {
         XCTAssertTrue(app.buttons["开始我的第一次飞行"].waitForExistence(timeout: 5))
 
         app.buttons["开始我的第一次飞行"].tap()
-        XCTAssertTrue(app.staticTexts["一句话就够，航班信息可以稍后补"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["今天这趟，先留一句话。"].waitForExistence(timeout: 5))
     }
 
     private nonisolated func addSystemAlertHandler() {
@@ -570,7 +582,7 @@ final class HeadInCloudsUITests: XCTestCase {
 
     private func openCardStudio(text: String) {
         completeOnboardingToOpening()
-        app.buttons["opening.write"].tap()
+        app.buttons["shell.write"].tap()
         let editor = app.textViews["compose.text"]
         XCTAssertTrue(editor.waitForExistence(timeout: 5))
         editor.tap()
@@ -581,7 +593,7 @@ final class HeadInCloudsUITests: XCTestCase {
     }
 
     private func createPrivateCardFromOpening(text: String) {
-        app.buttons["opening.write"].tap()
+        app.buttons["shell.write"].tap()
         let editor = app.textViews["compose.text"]
         XCTAssertTrue(editor.waitForExistence(timeout: 5))
         editor.tap()

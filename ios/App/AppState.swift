@@ -409,6 +409,10 @@ final class CloudAppState: ObservableObject {
         return baseURL?.appendingPathComponent("share/cards/\(currentPost.id.uuidString)")
     }
 
+    var currentPublishText: String {
+        currentPost?.text ?? draftText.cloudFallback
+    }
+
     var myFlightRecords: [FlightRecordViewModel] {
         let localRecords = posts.sorted { $0.createdAt > $1.createdAt }.map {
             FlightRecordViewModel(
@@ -447,6 +451,19 @@ final class CloudAppState: ObservableObject {
             )
         }
         return Array(localCards)
+    }
+
+    var publicDiscoveryCards: [FlightSpacePostViewModel] {
+        flightSpacePosts.filter {
+            !hiddenPostIDs.contains($0.id.uuidString)
+        }.map {
+            FlightSpacePostViewModel(
+                id: $0.id,
+                identity: $0.publicIdentityLabel,
+                quote: $0.headlineQuote,
+                status: $0.commentCount > 0 ? "\($0.commentCount) 条回应" : "公开航线"
+            )
+        }
     }
 
     func selectFlightSpacePost(id: UUID?) {
@@ -555,6 +572,22 @@ final class CloudAppState: ObservableObject {
             "auto_generated_before": "true",
             "length": "\(quote.count)"
         ])
+    }
+
+    func finalizePrivateCardPublish() {
+        guard var post = currentPost else {
+            draftText = ""
+            return
+        }
+
+        let finalText = draftText.cloudFallback
+        post.text = finalText
+        post.headlineQuote = finalText
+        currentPost = post
+        generatedCard = renderer.render(post: post, flightContext: currentFlightContext)
+        upsertPostRecord(from: post)
+        draftText = ""
+        track(AnalyticsAppEvent.coreActionCompleted, properties: ["action_name": "private_card_publish_finalized"])
     }
 
     func sharePrivateCard(channel: ShareChannel) {

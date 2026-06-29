@@ -6,23 +6,14 @@ struct RootView: View {
     @StateObject private var appState = CloudAppState()
     @EnvironmentObject private var notificationRouter: NotificationRouter
     @State private var composeSource = "opening"
+    @State private var shellSelection: AppShellSection = .today
+    @State private var didNormalizeLaunchPath = false
 
     var body: some View {
         NavigationStack(path: $path) {
             Group {
                 if appState.account.hasCompletedOnboarding {
-	                    OpeningView(
-	                        onWrite: {
-	                            composeSource = appState.posts.isEmpty ? "01a" : "01b"
-	                            path.append(.compose)
-	                        },
-	                        onAddFlight: { path.append(.addFlightInfo) },
-	                        onReminder: { path.append(.flightReminder) },
-	                        onMyFlights: { path.append(.myFlights) },
-	                        onExplore: { path.append(.discovery) },
-	                        onSettings: { path.append(.accountSettings) },
-	                        flightRecordCount: appState.myFlightRecords.count
-	                    )
+                    appShell
                     .onAppear { appState.landingViewed(returning: !appState.posts.isEmpty) }
                 } else {
                     WelcomeView(
@@ -51,25 +42,15 @@ struct RootView: View {
                     GetStartedView(
                         onStart: {
                             appState.completeOnboarding()
-                            path.append(.opening)
+                            shellSelection = .today
+                            path.removeAll()
                         },
                         onSignIn: { path.append(.signIn) }
                     )
                     .onAppear { appState.onboardingStepViewed("00d") }
                     .navigationBarBackButtonHidden(true)
                 case .opening:
-	                    OpeningView(
-	                        onWrite: {
-	                            composeSource = appState.posts.isEmpty ? "01a" : "01b"
-	                            path.append(.compose)
-	                        },
-	                        onAddFlight: { path.append(.addFlightInfo) },
-	                        onReminder: { path.append(.flightReminder) },
-	                        onMyFlights: { path.append(.myFlights) },
-	                        onExplore: { path.append(.discovery) },
-	                        onSettings: { path.append(.accountSettings) },
-	                        flightRecordCount: appState.myFlightRecords.count
-	                    )
+                    appShell
                     .onAppear { appState.landingViewed(returning: !appState.posts.isEmpty) }
                     .navigationBarBackButtonHidden(true)
                 case .compose:
@@ -92,7 +73,10 @@ struct RootView: View {
                 case .cardStudio:
                     CardStudioView(
                         text: draftBinding,
-                        onPublish: { path.append(.publish) },
+                        onPublish: {
+                            appState.finalizePrivateCardPublish()
+                            path.append(.publish)
+                        },
                         onOpenPaywall: { path.append(.paywall) },
                         onQuoteEdited: appState.editHeadlineQuote
                     )
@@ -102,13 +86,16 @@ struct RootView: View {
                         .navigationBarBackButtonHidden(true)
                 case .publish:
                     PublishView(
-                        text: appState.draftText,
+                        text: appState.currentPublishText,
                         shareURL: appState.currentShareCardURL,
                         shareContext: appState.flightChipTitle,
                         feedback: appState.lastFeedback,
                         onShare: appState.sharePrivateCard,
                         onSaveImage: appState.savePrivateCardImage,
-                        onOpenFlight: { path.append(.myFlights) },
+                        onOpenFlight: {
+                            shellSelection = .flightBook
+                            path.removeAll()
+                        },
                         onVerifyFlight: {
                             if appState.publishSameFlight() == nil {
                                 path.append(.flightSpace)
@@ -200,6 +187,7 @@ struct RootView: View {
                         .navigationBarBackButtonHidden(true)
                 }
             }
+            .onAppear(perform: normalizeLaunchPathIfNeeded)
         }
         .tint(HICTheme.gold)
         .onChange(of: notificationRouter.pendingRoute) { route in
@@ -223,6 +211,25 @@ struct RootView: View {
         }
     }
 
+    private var appShell: some View {
+        AppShellView(
+            appState: appState,
+            selection: $shellSelection,
+            onWrite: {
+                composeSource = appState.posts.isEmpty ? "01a" : "01b"
+                path.append(.compose)
+            },
+            onAddFlight: { path.append(.addFlightInfo) },
+            onReminder: { path.append(.flightReminder) },
+            onSettings: { path.append(.accountSettings) },
+            onDiscoverViewed: appState.discoveryViewed,
+            onDiscoveryDetail: { postID in
+                appState.selectFlightSpacePost(id: postID)
+                path.append(.postDetailDiscovery)
+            }
+        )
+    }
+
     private var draftBinding: Binding<String> {
         Binding(
             get: { appState.draftText },
@@ -239,6 +246,14 @@ struct RootView: View {
                 }
             }
         )
+    }
+
+    private func normalizeLaunchPathIfNeeded() {
+        guard !didNormalizeLaunchPath else { return }
+        didNormalizeLaunchPath = true
+        guard appState.account.hasCompletedOnboarding else { return }
+        shellSelection = .today
+        path.removeAll()
     }
 
     private func handleNotificationRoute(_ route: NotificationRoute) {
