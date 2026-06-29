@@ -64,5 +64,6 @@
     "Any baseline analytics event or PRD 13.3 critical event is missing",
     "Post-onboarding app lacks the approved 4-entry shell or forces users to unwind a back stack between Today / Flight Book / Write / Discover",
     "Dev invents excluded screens or visual surfaces without a focused design addendum"
-  ]
+  ],
+  "human_approved_at": "2026-06-29T10:35:30.570Z"
 }
